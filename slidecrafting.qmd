@@ -1,0 +1,89 @@
+
+## Tooling
+
+There are two primary options for making your slides:
+
+1. Google Slides
+2. Quarto
+
+### Google Slides
+
+Google Slides was used throughout
+
+
+:::: {.columns}
+
+::: {.column width='50%'}
+**Pros**
+
+- Quick and easy to create
+- Lots of flexibility in layout
+- Printable/PDF version tends to create well
+:::
+
+::: {.column width='50%'}
+**Cons**
+
+- Navigation can be challenging for students due to lack of table of contents
+- The Google suite (Slides, Docs, Sheets) is blocked on *some* NHS networks
+- As code is generally pasted in as screenshots
+    - updates can be more time-consuming
+    - accessibility is reduced as screen-readers cannot consume this
+- Cannot integrate Menti directly
+:::
+
+::::
+
+
+
+
+### Quarto
+
+:::: {.columns}
+
+::: {.column width='50%'}
+**Pros**
+
+- Provides an automated table of contents
+- Easy to make a change across all code examples if you spot an issue or make a change to how you do things
+- Can include interactive elements (charts, embedded iframes from other sites such as Menti, streamlit apps)
+- Wide range of extensions gives you a lot of flexibility (e.g. focus-list allows you to create an incrementally-revealing list where previous points are dimmed as the next appears, reducing cognitive load)
+:::
+
+::: {.column width='50%'}
+**Cons**
+
+- More time-consuming to create
+- Less layout flexibility
+- Occasional very obscure bugs that are time-consuming to resolve
+- Requires you to host the end product (though github pages makes this pretty easy)
+    - In addition, due to choice of extensions in our template, we can't bundle it as a single HTML file, making distribution more challenging
+- PDF output is often not as good as in Google Slides
+- GitHub pages (where we tend to host) is blocked on *some* NHS networks
+:::
+
+::::
+
+
+
+## Theory of Slides
+
+Dan and I come at slides from two different angles - you may also have a preferred approach!
+
+:::: {.columns}
+
+::: {.column width='50%'}
+**Primarily a Teaching Aid**
+
+- Keeping the information per slide to a minimum to reduce cognitive load
+- Not as easy to refer back to; work best when combined with an [eBook](https://hsma.co.uk/books)
+:::
+
+::: {.column width='50%'}
+**Combined teaching aid and reference material**
+
+- May have significantly more text per slide
+- Slides should stand alone strongly as reference material
+:::
+
+::::

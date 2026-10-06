@@ -1,0 +1,47 @@
+
+
+## Technical
+
+## Environment Management - MiniForge
+
+
+## IDE - Positron
+
+
+
+
+## Early Python Sessions - CodeCompiler
+
+
+
+
+## Repository Storage - GitHub
+
+
+
+
+## eBooks - Quarto
+
+
+
+## Web Application Development - Streamlit
+
+
+
+
+## Administrative
+
+
+### Session Delivery - Zoom
+
+HSMA sessions are delivered on Zoom.
+
+
+
+### Student Communication - Slack
+
+
+
+### Material Sharing - HSMA Website
+
+All material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.
