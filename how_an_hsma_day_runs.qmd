@@ -9,11 +9,19 @@ You therefore effectively have two main 3 hour blocks of teaching to fill with a
 
 
 
-## Prior level of student knowledge
+## Reminder - Prior level of student knowledge
 
 HSMA is aimed at people with a wide range of backgrounds, from those with no prior computer programming experience all the way up to experienced python programmers with significant prior knowledge in areas such as statistics but who have perhaps not dabbled in operational research or machine learning previously.
 
 Therefore, exercises need to provide something for all of those people! This can be challenging but is achievable, and later parts of this section expand on some ways you can support this.
+
+
+::: {.callout-note}
+
+Read more about the pacing and prior level of knowledge in [this section](pacing_and_prior_knowledge.qmd).
+
+:::
+
 
 
 

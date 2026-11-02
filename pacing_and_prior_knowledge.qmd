@@ -1,0 +1,45 @@
+# Prior Knowledge and Pacing
+
+## Prior Knowledge - before joining
+
+HSMAs can come from a wide variety of backgrounds.
+
+A large number join with **zero** prior programming knowldge.
+
+However, you will also get
+
+- people with extensive R knowledge but limited or no Python experience
+- people with a small amount of prior R or Python experience
+- people (usually analysts) who have used complex Excel and SQL, but have not used a language like R or Python before.
+
+HSMAs can be
+
+- analysts working in the NHS or related organisations
+- clinicians
+- managers
+- GPs
+
+There are no particular entry requirements for HSMA beyond a self declaration of a reasonable level of computer literacy. We do not expect students to have any particular mathematical, statistical, or other knowledge.
+
+Therefore, sessions have to be designed with this diversity in mind; you will often need to cover the foundations in significant detail.
+
+
+::: {.callout-tip}
+
+In HSMA, we do not necessarily shy away from explaining more technical thing - but it's important to consider creative approaches to doing so, like games, analogies, etc.
+
+However, in some cases, it may also be reasonable to keep a technical explanation extremely simplified or high level. The main goal is to make students into safe, effective users of various techniques; if deep understanding of the technical underpinnings of a method is not necessary to achieve that, then consider skipping it in favour of spending more time on potential pitfalls.
+
+:::
+
+
+## Prior knowledge - on the programme
+
+To see what people have learned prior to the session you are writing, take a look at it in the flow of the [draft HSMA 7 syllabus](https://docs.google.com/spreadsheets/d/1k14aCL4ON5AFZ9hlGZOcLwkemSYUcZlfyF-tDH3zUQw/edit?usp=sharing).
+
+Speak to Sammi or Dan if you have any issues with accessing the file at that link.
+
+
+## Pacing
+
+The general gist for HSMA pacing is 'go a lot slower than you think you need to'.

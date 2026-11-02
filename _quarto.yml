@@ -1,25 +1,33 @@
 project:
   type: book
+  resources:
+    - resources/fonts/lexend/*.woff2
 
 book:
   title: "hsma_content_writing_manual"
-  author: "Norah Jones"
-  date: "05/10/2026"
+  author: "Sammi Rosser"
+  date: "02/11/2026"
+  favicon: resources/favicon.png
+  sidebar:
+    logo: resources/hsma_logo_white_wide.png
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
+    - how_an_hsma_day_runs.qmd
+    - pacing_and_prior_knowledge.qmd
+    - exercise_types.qmd
+    - slidecrafting.qmd
+    - colour_palette.qmd
+    - accessibility_considerations.qmd
+    - hsma_tech_stack.qmd
+    - anatomy_of_a_session_repo.qmd
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      - darkly
+      - theme-dark.scss
+    css: styles.css
+    mainfont: Lexend
+    title-block-banner: resources/banner.png
   pdf:
     documentclass: scrreprt
-
-
-

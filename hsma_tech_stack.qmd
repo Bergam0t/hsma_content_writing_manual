@@ -1,4 +1,4 @@
-
+# The HSMA Tech Stack
 
 ## Technical
 
@@ -45,3 +45,7 @@ HSMA sessions are delivered on Zoom.
 ### Material Sharing - HSMA Website
 
 All material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.
+
+You do not have to manage the uploads of the files yourself - this will all be handled by Sammi, Dan or Jemma closer to the launch of HSMA 7.
+
+However, you can see what the format of the sharing is likely to look at on <www.hsma.co.uk/modules>.
