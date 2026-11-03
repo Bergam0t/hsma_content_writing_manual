@@ -1,1 +1,138 @@
-# Colour Palette
+# Colours and Fonts
+
+The [HSMA Quarto slide template](https://github.com/hsma-programme/hsma_quarto_slide_template) sets up the colours and fonts for you, so if you're working in Quarto you shouldn't normally need to change anything.
+
+This section is for when you need to pick colours or fonts yourself - for example in Google Slides, in a diagram, or in a value box - so that your materials stay consistent with the rest of HSMA.
+
+## Core colours
+
+HSMA slides use light text on a dark background, with HSMA red as the accent colour.
+
+| | Colour | Hex | Where it's used |
+|---|---|---|---|
+| [ ]{.swatch style="background:#8f0000"} | HSMA red | `#8f0000` | Brand colour; the progress bar along the bottom of the slides |
+| [ ]{.swatch style="background:#303030"} | Background grey | `#303030` | Slide background behind the banner image |
+| [ ]{.swatch style="background:rgba(56,56,56,0.8)"} | Content box grey | `rgba(56, 56, 56, 0.8)` | The semi-transparent box behind slide content, which lets the banner show through |
+| [ ]{.swatch style="background:#ffffff"} | White | `#ffffff` | All body text and headings |
+| [ ]{.swatch style="background:#42affa"} | Link blue | `#42affa` | Links |
+| [ ]{.swatch style="background:#FAEE42"} | Highlight yellow | `#FAEE42` | Alternate Link Colour, or highlighted text |
+
+The slide backgrounds are the HSMA banner artwork (`assets/banner.png` on the title slide, `assets/banner_hq.png` on content slides) rather than a flat colour.
+
+::: {.callout-tip}
+HSMA red is a good accent colour but a poor text colour on the dark background - its contrast ratio against `#303030` is only 1.4:1. Use it for fills and borders, with white text on top (9.7:1), rather than as coloured text.
+:::
+
+## Title slide
+
+The title slide puts a dark, semi-transparent panel over the banner, with two accent colours for the author and the tagline.
+
+| | Colour | Hex | Where it's used |
+|---|---|---|---|
+| [ ]{.swatch style="background:#7ac943"} | Author green | `#7ac943` | Author name |
+| [ ]{.swatch style="background:#ffe600"} | Tagline yellow | `#ffe600` | Tagline under the title |
+| [ ]{.swatch style="background:rgba(0,0,0,0.45)"} | Panel black | `rgba(0, 0, 0, 0.45)` | Panel behind the title text |
+
+## Value box colours
+
+Value boxes come from the `bergam0t/value-box` extension, and you choose a colour with the `color` attribute (e.g. `color="bg-teal"`). Text in a value box is always white.
+
+All of the extension's own colours give white text a contrast ratio of at least 4.5:1, which meets the WCAG AA standard for normal-sized text.
+
+| | Class | Hex | Contrast with white |
+|---|---|---|---|
+| [ ]{.swatch style="background:#3d6a9e"} | `bg-blue` (the default) | `#3d6a9e` | 5.6:1 |
+| [ ]{.swatch style="background:#2d4a6b"} | `bg-navy` | `#2d4a6b` | 9.1:1 |
+| [ ]{.swatch style="background:#2e7873"} | `bg-teal` | `#2e7873` | 5.2:1 |
+| [ ]{.swatch style="background:#3d7a52"} | `bg-green` | `#3d7a52` | 5.1:1 |
+| [ ]{.swatch style="background:#5c6e3f"} | `bg-olive` | `#5c6e3f` | 5.6:1 |
+| [ ]{.swatch style="background:#8f4e2e"} | `bg-orange` | `#8f4e2e` | 6.4:1 |
+| [ ]{.swatch style="background:#8a3535"} | `bg-red` | `#8a3535` | 8.0:1 |
+| [ ]{.swatch style="background:#7d3d5e"} | `bg-pink` | `#7d3d5e` | 7.8:1 |
+| [ ]{.swatch style="background:#533d7a"} | `bg-purple` | `#533d7a` | 9.1:1 |
+| [ ]{.swatch style="background:#3d4f63"} | `bg-slate` | `#3d4f63` | 8.4:1 |
+| [ ]{.swatch style="background:#4a4f57"} | `bg-grey` | `#4a4f57` | 8.2:1 |
+
+The slide template also defines three lighter colours of its own, which take priority over the extension's. White text doesn't work on these - its contrast ratio is well below the 4.5:1 minimum - but black text does:
+
+| | Class | Hex | Contrast with white | Contrast with black |
+|---|---|---|---|---|
+| [ ]{.swatch style="background:#d37b00"} | `bg-amber` | `#d37b00` | 3.2:1 | 6.6:1 |
+| [ ]{.swatch style="background:#6abdc0"} | `bg-light-blue` | `#6abdc0` | 2.2:1 | 9.7:1 |
+| [ ]{.swatch style="background:#c5c5c5"} | `bg-light-grey` | `#c5c5c5` | 1.7:1 | 12.2:1 |
+
+::: {.callout-warning}
+Don't use `bg-amber`, `bg-light-blue` or `bg-light-grey` with the default white text. Always switch the text to black, as described below.
+:::
+
+To do this, add `font-color="black"` to the value box. If the box has an icon, add `icon-color="black"` as well, as icons are white by default.
+
+```markdown
+::: {.value-box color="bg-light-blue" font-color="black" icon="bi-lightbulb" icon-color="black"}
+Black text on a light blue box (9.7:1 contrast).
+:::
+```
+
+If you'd rather keep white text, pick one of the extension's colours in the first table instead (for example `bg-orange` in place of `bg-amber`).
+
+## Code windows
+
+Code shown in a code window uses a dark slate colour scheme, separate from the rest of the slide.
+
+| | Colour | Hex | Where it's used |
+|---|---|---|---|
+| [ ]{.swatch style="background:#1e293b"} | Code background | `#1e293b` | Behind the code |
+| [ ]{.swatch style="background:#0f172a"} | Title bar | `#0f172a` | Window title bar |
+| [ ]{.swatch style="background:#334155"} | File tab | `#334155` | File name tab |
+| [ ]{.swatch style="background:#e2e8f0"} | Code text | `#e2e8f0` | Code text |
+
+## Choosing your own colours
+
+If you're adding colour that the template doesn't cover - in a diagram, a chart or a Google Slides deck - a few rules of thumb keep things readable:
+
+- **Check contrast.** Text needs a contrast ratio of at least 4.5:1 with its background (3:1 for large or bold text, and for lines and shapes in charts). The [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/) is a quick way to test a pair of colours.
+- **Don't rely on colour alone.** Pair colour with a label, an icon or a pattern, so the point still comes across for people with colour vision deficiency.
+- **Reuse the colours above** where you can, rather than introducing new ones.
+
+Read more in [Accessibility Considerations](accessibility_considerations.qmd).
+
+## Fonts
+
+### Lexend
+
+All HSMA slides use [Lexend](https://www.lexend.com/), for both body text and headings. It's also the font used on the HSMA website and in this manual.
+
+Lexend was designed to be easy to read, with wide letter spacing and clear, distinct letter shapes, which suits a mixed audience reading slides on a shared screen.
+
+In the Quarto template, Lexend is set in `_brand.yml` and loaded from Google Fonts, so you don't need to install it. In Google Slides, you can add it through **Font → More fonts** and searching for "Lexend".
+
+::: {.callout-note}
+The HSMA website also uses Bebas Neue for some page headings. The slide template doesn't, so stick to Lexend on slides.
+:::
+
+### Text sizes
+
+The template sets the base text size to 22px, with paragraphs at 0.85em and second-level headings at 1.3em.
+
+If your content doesn't fit on a slide, you may either want to split it across two slides, or up to a certain point, consider using a div that sets a smaller font like so:
+
+```html
+
+::: {style='font-size: 75%;'}
+Your text goes here
+:::
+
+```
+
+### Code
+
+Code blocks use the default monospace font from Quarto's Reveal.js theme. Code windows are set slightly smaller, at around 20px, so that longer lines fit.
+
+### Icons
+
+The template loads two icon sets, which you can use in value boxes through the `icon` attribute:
+
+- [Font Awesome](https://fontawesome.com/icons) 6.4.0 - e.g. `icon="fa-solid fa-lightbulb"`
+- [Bootstrap Icons](https://icons.getbootstrap.com/) 1.11.3 - e.g. `icon="bi-arrow-down-up"`
+
+As with colour, don't let an icon carry meaning on its own - pair it with text that says the same thing.

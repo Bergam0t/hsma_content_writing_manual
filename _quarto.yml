@@ -21,6 +21,9 @@ book:
     - hsma_tech_stack.qmd
     - anatomy_of_a_session_repo.qmd
 
+filters:
+  - bergam0t/value-box
+
 format:
   html:
     theme:
