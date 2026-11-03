@@ -88,3 +88,513 @@ Dan and I come at slides from two different angles - you may also have a preferr
 :::
 
 ::::
+
+
+## Hints and Tips for Quarto Slides
+
+The tips below are drawn from the HSMA 7 session 2F deck (*Animaniacs: bringing your simulations to life with vidigi*), which was built on the [HSMA Quarto slide template](https://github.com/hsma-programme/hsma_quarto_slide_template).
+
+Most of them work in the template as it is. Where a tip needs something extra, that's noted alongside it.
+
+### Organising your deck
+
+#### Split the deck into section files
+
+Rather than writing one very long `slides.qmd`, put each part of the session in its own `_SECTION_*.qmd` file and pull them into the main deck with `include`:
+
+```markdown
+{{{< include _SECTION_intro_to_animations.qmd >}}}
+
+{{{< include _SECTION_what_is_vidigi.qmd >}}}
+
+{{{< include _SECTION_vidigi_exercise_1.qmd >}}}
+```
+
+This makes it easy to reorder the session, find the slide you're looking for, and reuse sections elsewhere. The 2F repo uses the same section files to build a second, shorter deck for an external workshop, using a [Quarto project profile](https://quarto.org/docs/projects/profiles.html).
+
+#### Preview one section at a time
+
+The template keeps all the format, plugin and filter settings in `_metadata.yml`, which Quarto applies to every file in the project. That means you can preview a single section on its own, with the full HSMA styling, without rebuilding the whole deck:
+
+```bash
+quarto preview _SECTION_vidigi_exercise_1.qmd
+```
+
+This is much faster than rendering the full deck every time you make a change, especially once the deck contains outputs from code.
+
+::: {.callout-warning}
+If your `docs/` folder looks broken or is missing files after a render, check for a leftover `quarto preview` process before assuming something is wrong with your slides. A preview still running in the background can clash with a full render and silently delete files.
+
+If running in positron or VSCode, you can just close the process by killing the relevant terminal. If that hasn't done it, run `tasklist | findstr /i "quarto deno"` (windows) in a terminal to check, close any you find, and render again.
+
+Mac/linux: `pgrep -afil 'quarto|deno'`
+:::
+
+### Slide structure
+
+Use `#` headings for sections and `##` headings for slides. The template shows each section as a vertical stack, with dots on the right-hand side so students can see where they are within it.
+
+For a slide without a visible title (such as an exercise slide), give it a name for the slide menu using the following syntax so it can still be found easily:
+
+```markdown
+## {.slide data-menu-title="Vidigi Exercise 1"}
+```
+
+Slides covering an interesting tangent can be marked with "BONUS:" at the start of the title, so students know they're optional.
+
+### Exercise slides
+
+The 2F exercise slides follow a consistent layout that you may wish to copy:
+
+- **The file to work in**, given by its path (e.g. `exercises/exercise_1.py`), with a sentence on what it contains.
+- **How long they have**, in a value box with a clock icon (e.g. "45 minutes + 10 minute break").
+- **The core tasks** as a numbered list, with small greyed-out hints after any tricky steps.
+- **Extension tasks** in a second column that only appears when you click, in smaller grey text. This gives faster students more to do without overwhelming everyone else.
+
+````markdown
+:::: {.columns}
+
+::: {.column width='60%'}
+::: {style='font-size: 75%;'}
+You will be working with the file `exercises/exercise_1.py`.
+:::
+:::
+
+::: {.column width='30%'}
+::: {.value-box icon="fa-solid fa-clock" icon-position="left" icon-size="2em" min-height="60px" font-size="0.8rem"}
+45 minutes <br>+ 10 minute break
+:::
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width='60%'}
+::: {style='font-size: 70%'}
+1. Add a logger
+1. Add the required logging steps [(I'd recommend just using queues to start with)]{style="color:lightgrey;font-size: 65%"}
+:::
+:::
+
+::: {.column width='40%'}
+::: {.fragment}
+::: {style='font-size: 65%; color: lightgrey'}
+### Extensions
+
+- Try changing the number of resources.
+:::
+:::
+:::
+
+::::
+````
+
+### Text
+
+- **Highlighting key terms**: make a new term stand out where it's introduced, e.g. `[**Directly Follows Graph**]{style="color:yellow"}`.
+- **Asides**: put extra detail in small grey text so it doesn't compete with the main point, e.g. `[(easier than it sounds - 1 line of code!)]{style="color:lightgrey"}`.
+- **Supporting text**: wrap longer explanations in `::: {style='font-size: 75%;'}` so the slide's main point stays the largest thing on it. If you find yourself shrinking everything, consider splitting the slide in two instead.
+- **Spacing**: `<br>` adds a line of space. For a smaller gap, wrap it in a reduced font size: `::: {style='font-size: 35%;'}` then `<br>` then `:::`.
+
+### Revealing content step by step
+
+- **Fragments**: wrap anything in `::: {.fragment}` to reveal it on the next click. Add `.fragment` to a `.columns` block to reveal a whole row at once: `:::: {.columns .fragment}`.
+- **Focus lists**: wrap a bullet list in `::: {.focus-list}` and each point appears in turn, with earlier points dimmed so attention stays on the current one. This is great from a cognitive load perspective, keeping people focussed on the point currently being talked about.
+- **Before and after images**: put two images in an `.r-stack` and make the second a fragment. It appears on top of the first, in the same place.
+
+```markdown
+::: {.r-stack}
+![](assets/vidigi_no_features.png){.lightbox height=600}
+
+![](assets/vidigi_with_features.png){.fragment .lightbox height=600}
+:::
+```
+
+### Value boxes
+
+The 2F deck uses value boxes in a few consistent ways, so students quickly learn what each kind means:
+
+| Purpose | Settings |
+|---|---|
+| Tip | `icon="fa-solid fa-lightbulb"`, `color="bg-green"` |
+| Warning | `icon="fa-solid fa-triangle-exclamation"`, `color="bg-red"` |
+| Time for an exercise | `icon="fa-solid fa-clock"` |
+
+Some other useful tricks:
+
+- Add `fragment="fade-in"` to a value box to reveal it on the next click. This works well for a tip that follows on from an explanation.
+- Put several boxes side by side in a `::: {.value-box-row}`, for example to list three benefits of a technique.
+- Make a box a link with `href` and `target="_blank"`. A row of these makes a good "Further Reading" slide.
+- To centre a single box, wrap it in `<div style="display: flex; justify-content: center; align-items: center;">` and a closing `</div>`.
+
+See [Colours and Fonts](colour_palette.qmd) for which value box colours to use.
+
+### Images
+
+Add `.lightbox` and a fixed height to images: `![](assets/example.gif){.lightbox height=500}`. The fixed height stops large images spilling off the slide, and students can click the image to see it full size.
+
+GIFs work well for showing something in motion, such as an animation or an app being used.
+
+### Code
+
+#### Show which file the code belongs in
+
+Wrap code in a `codewindow`, with the file name as the first line. It appears as a tab at the top of the window, so students always know which file you're talking about.
+
+````markdown
+::: {.codewindow .python}
+b_simple_one_step_model_vidigi.py
+```python
+import simpy
+```
+:::
+````
+
+#### Highlight the lines that matter
+
+When walking through changes to existing code, dim the lines that haven't changed and highlight the new ones with `code-line-style`. Marking new lines with a `# NEW` comment helps too, and `...` can stand in for code that hasn't changed.
+
+````markdown
+```{.python code-line-style="dim:1-3,focus:4-5" code-line-style-preset="emphasis"}
+import simpy
+from sim_tools.distributions import Exponential, Lognormal
+import pandas as pd
+from vidigi.logging import EventLogger  # NEW
+from vidigi.utils import create_event_position_df, EventPosition  # NEW
+```
+````
+
+Code blocks have a maximum height by default, and scroll if the code is any longer. For a long piece of code that you want to show in full, such as a summary of a whole function, add the `.full-height-code` class to the code window:
+
+````markdown
+::: {.codewindow .python .full-height-code}
+c_simple_one_step_model_vidigi_resources.py
+```python
+def attend_clinic(self, patient):
+    ...
+```
+:::
+````
+
+Check the slide afterwards to make sure the code still fits. If it doesn't, consider splitting it across two slides or using the smaller font div trick mentioned elsewhere in this section.
+
+### Including outputs from code
+
+The template sets `eval: false`, so code is shown on slides but not run. To show the output of some code instead, turn it on for that cell only, and optionall hide the code with `echo: false`:
+
+````markdown
+```{{python}}
+#| eval: true
+#| echo: false
+#| label: every-1-min-time-size
+
+from sample_code.c_simple_one_step_model_vidigi_resources import Param, Model
+...
+```
+````
+
+- **Import from the students' files** where you can, as above, so the outputs on your slides come from exactly the code students have been given. See [Walking through code, then showing its output](#walking-through-code-then-showing-its-output) below for a full example.
+- **Give every executed cell a `label`.** It makes errors much easier to track down.
+- **Freeze outputs.** The template sets `freeze: auto`, so cells are only re-run when their code changes, which keeps renders quick.
+- **Put calculated numbers in your text** with inline code, e.g. ``Time to generate: `{python} round(animation_time_1, 2)` seconds``. The figures then stay correct if something else changes.
+
+#### Walking through code, then showing its output
+
+The 2F deck walks students through the changes to a model one step at a time, then shows the result of running it. The code students are given lives in a `sample_code/` folder in the session repository, and the slides use it in two different ways.
+
+**Walkthrough slides show a typed-out excerpt of the file.** These aren't run. Each one shows just the part of the file being discussed, in a code window named after the file, with `code-line-style` highlighting the new lines and `...` standing in for code that hasn't changed:
+
+````markdown
+## Generating the Animation
+
+::: {.codewindow .python}
+b_simple_one_step_model_vidigi.py
+```{.python code-line-style="dim:1-3,focus:4-7,dim:8,focus:9" code-line-style-preset="emphasis"}
+...
+layout = create_event_position_df(...)
+
+fig = my_model.logger.animate_activity_log(
+    event_position_df=layout,
+    every_x_time_units=1,
+)
+
+fig.show()
+```
+:::
+````
+
+**Output slides import the real file and run it.** The cell is hidden with `echo: false`, so students only see the result, and it imports the `Param` and `Model` classes from the same file students have been given:
+
+````markdown
+## The animation
+
+```{{python}}
+#| eval: true
+#| echo: false
+#| label: first-simple-animation
+
+from IPython.display import HTML
+from sample_code.b_simple_one_step_model_vidigi import Param, Model
+from vidigi.utils import create_event_position_df, EventPosition
+
+my_params = Param()
+my_model = Model(my_params)
+my_model.run_model()
+
+# Layout is defined inside the `if __name__ == "__main__":` block of
+# b_simple_one_step_model_vidigi.py, so it can't be imported - keep this
+# copy in sync with that file
+layout = create_event_position_df([...])
+
+fig = my_model.logger.animate_activity_log(
+    event_position_df=layout,
+    every_x_time_units=1,
+    plotly_height=600,
+    plotly_width=1180
+)
+
+HTML(fig.to_html(full_html=False, include_plotlyjs="cdn", auto_play=False))
+```
+````
+
+This means a fix to the model only needs making once, in the students' file, and the outputs on the slides update the next time the deck is rendered.
+
+For the import to work:
+
+- The folder needs an empty `__init__.py` file in it (e.g. `sample_code/__init__.py`), so Python treats it as a package.
+- Code runs from the project's root folder (the template sets `execute-dir: project`), so imports are written relative to the root, as above.
+- Anything inside the file's `if __name__ == "__main__":` block can't be imported. In the 2F deck, this was the animation layout, so it's copied into the cell with a comment saying to keep the two in sync.
+
+Note that the walkthrough excerpts **aren't** linked to the file, so if you change the model, check the walkthrough slides still match.
+
+::: {.callout-tip}
+If you want to show a whole short file rather than an excerpt, you can pull it in with `include` instead of typing it out. This works inside a code window, and alongside `code-line-style`:
+
+````markdown
+::: {.codewindow .python}
+code_example_1.py
+```{.python code-line-style="dim:1-3,focus:4" code-line-style-preset="emphasis"}
+{{{< include code_examples/code_example_1.py >}}}
+```
+:::
+````
+
+The line numbers in `code-line-style` refer to lines of the file, so check the highlighting still lines up whenever the file changes.
+:::
+
+#### Animated plotly figures
+
+To include an animated Plotly figure, convert it to HTML:
+
+```python
+from IPython.display import HTML
+
+HTML(fig.to_html(full_html=False, include_plotlyjs="cdn", auto_play=False))
+```
+
+Always include `auto_play=False`. The template then plays each animation automatically when you arrive on its slide, and pauses it when you leave. Without it, animations start playing as soon as their slide loads, before anyone can see them.
+
+The template only loads the slides close to the one you're on (`view-distance: 3` in `_metadata.yml`), so GIFs and animations further on don't load early and slow the deck down.
+
+### Embedding other websites
+
+You can embed a live website, such as a tool you're demonstrating, in an `iframe`:
+
+````markdown
+```{=html}
+<iframe width='1200' height='625' src='https://embed.diagrams.net' title='Draw io'></iframe>
+```
+````
+
+Always give the iframe a `title`, so screen-reader users know what it contains.
+
+### Presenting
+
+These keyboard shortcuts are useful while presenting:
+
+| Key | What it does |
+|---|---|
+| `q` | Turns the mouse pointer into a laser pointer (and back) |
+| `f` | Fullscreen |
+| `s` | Speaker view, including any speaker notes |
+| `Alt` + click | Zooms in on part of a slide (click again with `Alt` to zoom back out) |
+
+Add speaker notes to a slide with a `::: {.notes}` block. They only appear in speaker view.
+
+
+## Reporting Problems and Improving the Template
+
+If you find a problem with the slide template, or something it should do but doesn't, please let us know so that everyone benefits. Some examples are a bug, a layout that breaks, a colour that fails the contrast checks, or a missing feature.
+
+There are two ways to do this:
+
+1. **Open an issue** on the [slide template repository](https://github.com/hsma-programme/hsma_quarto_slide_template/issues). Describe what you were trying to do, what happened instead, and (if you can) include the few lines of Quarto that reproduce it. A screenshot helps for anything visual.
+2. **Fix it yourself and submit a pull request.** Fork the repository, make the change on a new branch, and open a [pull request](https://github.com/hsma-programme/hsma_quarto_slide_template/pulls) explaining what you've changed and why. If it's a bigger change, it's worth opening an issue first so we can agree an approach.
+
+::: {.callout-tip}
+Before opening a pull request, check that the template's example deck (`slides.qmd`) still renders, and preview a single section to check that it still looks right. Where a change affects what's described in this manual, it's worth updating the relevant section here too.
+:::
+
+## Extensions in the Slide Template
+
+The slide template comes with a number of Quarto extensions already installed and switched on, so you can use them without any setup. Some are used throughout the template's own example deck (`slides.qmd`), which is a good place to see them working.
+
+Extensions come in two kinds, and which you're using affects where they are switched on or off in `_metadata.yml`:
+
+- **Plugins** are listed under `revealjs-plugins` (e.g. `verticator`, `pointer`, `codefocus`, `a11y`, `tabset`, `codewindow`).
+- **Filters** are listed under `filters` (e.g. `stlite`, `reveal-header`, `bergam0t/value-box`, `bergam0t/focus-list`, `code-fullscreen`, `code-line-style`).
+
+Value boxes, `code-line-style` and `codewindow` are covered in [Hints and Tips for Quarto Slides](#hints-and-tips-for-quarto-slides) above. The rest are described here.
+
+### Focus lists
+
+Wrap a bullet list in `::: {.focus-list}` and each point appears in turn, with the previous points dimmed. This keeps attention on the current point and reduces cognitive load. It also works with nested lists.
+
+```markdown
+::: {.focus-list}
+* First important point
+  * And a sub-point on that matter
+* Second important point (previous one dims!)
+* Third important point
+:::
+```
+
+### Code focus
+
+The `codefocus` plugin highlights particular lines of a code block as you step through fragments. This is useful when you want to talk through a block of code line by line.
+
+Put a fragment with a `data-code-focus` attribute after the code block. When the fragment appears, the line numbers you give are highlighted. The `.current-only` class means that only the current fragment's lines are highlighted at any one time.
+
+````markdown
+```python
+answer = "42"
+question = "What is the answer to life, the universe, and everything?"
+print(f"Question: '{question}'\n Answer: '{answer}'")
+```
+
+::: {.fragment .current-only data-code-focus="1"}
+When this fragment is shown, the first line of code is highlighted.
+:::
+
+::: {.fragment .current-only data-code-focus="3"}
+Then this line when we move through.
+:::
+````
+
+::: {.callout-note}
+`codefocus` steps through code using fragments, while `code-line-style` (covered above) fixes which lines are dimmed or highlighted when the slide appears. `code-line-style` is usually simpler when you just want to draw attention to the new lines in a block of code.
+:::
+
+### Tabs
+
+The `tabset` plugin lets you put alternative content on the same slide, with tabs to switch between them. This works well for showing the same thing done two ways, such as Google Slides and Quarto, or code alongside its output.
+
+```markdown
+::: {.panel-tabset}
+
+### Code
+
+Content for the first tab.
+
+### Output
+
+Content for the second tab.
+
+:::
+```
+
+Each `###` heading inside the `.panel-tabset` becomes a tab. Add `tab-active=1` to the opening line, e.g. `::: {.panel-tabset tab-active=1}`, to start on a different tab (counting from 0).
+
+### Interactive Streamlit apps
+
+The `stlite` filter runs a Streamlit app directly in the slide, in the browser, with no server required. Use a `stlite-python` code block:
+
+````markdown
+```{{stlite-python}}
+import micropip
+await micropip.install("plotly")
+
+import streamlit as st
+from plotly import express as px
+
+st.title("Sample App")
+
+st.slider("Choose a number between 1 and 10", min_value=1, max_value=10, value=5)
+
+st.plotly_chart(
+    px.scatter(x=[1,2,3], y=[2,3,4])
+)
+```
+````
+
+Any package that isn't built in needs installing with `micropip`, as for plotly above.
+
+### Live code in the browser
+
+The `live` extension (from `live-revealjs`, the format the template uses) lets you run Python in the browser. Use a `pyodide` code block, and students can edit and run it on the slide:
+
+````markdown
+```{{pyodide}}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.normal(170, 10, 250)
+plt.hist(x)
+plt.show()
+```
+````
+
+### Navigating and presenting
+
+These extensions work automatically, with nothing to add to your slides.
+
+| Extension | What it does |
+|---|---|
+| `verticator` | Shows a column of dots at the side of each section, one per slide in the section, so students can see where they are. Clicking a dot jumps to that slide. |
+| `pointer` | Gives you a laser pointer. Press `q` to switch it on and off. |
+| `fullscreen` | Press `f` to put the slides into fullscreen. |
+| `code-fullscreen` | Adds a button to each code block that expands the code to fill the screen, useful for long code. |
+| `reveal-header` | Puts the HSMA logo (from `logo:` in `_metadata.yml`) in the header and links it to hsma.co.uk. |
+| `chalkboard` | Press `b` to draw on a blank chalkboard, or `c` to draw over the current slide. This is built in to Reveal.js and switched on in `_metadata.yml`. |
+
+### Accessibility checks (a11y)
+
+The `a11y` plugin adds a range of accessibility features to the slides, and is switched on in the template. These include:
+
+- a settings menu (press `a`) with high contrast mode, font size and font family controls, and text spacing controls
+- clearer focus outlines for keyboard users
+- announcements of slide changes and fragments for screen readers
+
+Two further checks are available, but are switched **off** by default in the template, as they can get in the way while you are building a deck:
+
+- **Alt text warnings** highlight any image missing alt text
+- **Link highlighting** underlines all links, so they're not identified by colour alone
+
+To switch either on while you are looking specifically at accessibility, change the setting in `_metadata.yml`:
+
+```yaml
+revealjs-a11y:
+  high-contrast: false
+  alt-text-warnings: true # highlight images missing alt text
+  link-highlight: true # underline all links
+```
+
+If you'd rather turn the whole plugin off, comment out the `a11y` line under `revealjs-plugins`, and remove the `#` to switch it back on. The `revealjs-a11y:` settings are ignored while the plugin is off.
+
+```yaml
+revealjs-plugins:
+  - verticator
+  - fullscreen
+  - pointer
+  - codefocus
+  # - a11y
+  - tabset
+  - codewindow
+```
+
+::: {.callout-note}
+We don't currently rigidly enforce the use of alt text on images in HSMA slides. However, it's good practice, and means that people using screen readers aren't left out. Switch on `alt-text-warnings` from time to time to see which of your images are missing it, and add a short description to any you find: `![A diagram of the clinic process](assets/clinic.png)`.
+
+Read more in [Accessibility Considerations](accessibility_considerations.qmd).
+:::

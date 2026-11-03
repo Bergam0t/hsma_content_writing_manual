@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -168,25 +203,25 @@ background-size: cover;
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./slidecrafting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tooling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Designing HSMA Slides</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./colour_palette.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colour Palette</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colours and Fonts</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./accessibility_considerations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neurodiversity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">General Points</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./hsma_tech_stack.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Technical</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The HSMA Tech Stack</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -200,8 +235,16 @@ background-size: cover;
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#where-to-create-the-repository" id="toc-where-to-create-the-repository" class="nav-link active" data-scroll-target="#where-to-create-the-repository"><span class="header-section-number">8.1</span> Where to create the repository</a></li>
+  <li><a href="#publishing-slides-with-github-pages" id="toc-publishing-slides-with-github-pages" class="nav-link" data-scroll-target="#publishing-slides-with-github-pages"><span class="header-section-number">8.2</span> Publishing slides with GitHub Pages</a></li>
+  <li><a href="#solutions" id="toc-solutions" class="nav-link" data-scroll-target="#solutions"><span class="header-section-number">8.3</span> Solutions</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -210,9 +253,67 @@ background-size: cover;
 
 
 
-<p>HSMA 7 sessions contain 6 hours of available teaching and group exercise time.</p>
+<section id="where-to-create-the-repository" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="where-to-create-the-repository"><span class="header-section-number">8.1</span> Where to create the repository</h2>
+<p>Each HSMA session lives in its own GitHub repository on the <a href="https://github.com/hsma-programme">hsma-programme</a> account.</p>
+<p>Create the repository as <strong>private</strong> while you are still working on it. Students shouldn’t stumble across half-finished slides, exercises or code, and it gives you room to restructure things freely.</p>
+<p>Once the session materials are ready, change the repository to <strong>public</strong>, so that students can access it. You can do this under <strong>Settings → General → Danger Zone → Change repository visibility</strong>.</p>
+</section>
+<section id="publishing-slides-with-github-pages" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="publishing-slides-with-github-pages"><span class="header-section-number">8.2</span> Publishing slides with GitHub Pages</h2>
+<p>If you’re making your slides with Quarto (see <a href="./slidecrafting.html">Designing HSMA Slides</a>), they are published as a website using GitHub Pages, so students can open them in a browser.</p>
+<p>The slide template is already set up for this. It renders the slides into a <code>docs/</code> folder in the repository, which GitHub Pages then serves.</p>
+<p><strong>1. Render the slides into <code>docs/</code></strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render <span class="at">--output-dir</span> docs</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Always include <code>--output-dir docs</code>. The slides are then in <code>docs/index.html</code>.</p>
+<p><strong>2. Commit and push <code>docs/</code></strong></p>
+<p>The <code>docs/</code> folder needs to be committed to the repository, so don’t add it to <code>.gitignore</code>.</p>
+<p><strong>3. Switch on GitHub Pages</strong></p>
+<p>In your repository on GitHub, go to <strong>Settings → Pages</strong>. Under <strong>Build and deployment</strong>, set the source to <strong>Deploy from a branch</strong>, then choose the <code>main</code> branch and the <code>/docs</code> folder, and save.</p>
+<p>After a minute or two, the slides appear at <code>https://hsma-programme.github.io/&lt;repository-name&gt;/</code>. The link is also shown at the top of the Pages settings.</p>
+<p><strong>4. Check it</strong></p>
+<p>Open the published link and click through the slides. If something is missing, it’s usually a folder that needs adding to the <code>docs-keep</code> list in <code>_quarto.yml</code>. The template’s README explains how.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Whether GitHub Pages can be used from a <strong>private</strong> repository depends on the plan the account is on. If it isn’t available while the repository is private, wait until you make it public before switching Pages on.</p>
+</div>
+</div>
+<p>Remember to render and push again whenever you change the slides, as the published site only updates when <code>docs/</code> does.</p>
+</section>
+<section id="solutions" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="solutions"><span class="header-section-number">8.3</span> Solutions</h2>
+<p>Students can see everything in a public repository, including its history. To avoid solutions being visible before the session has finished:</p>
+<ul>
+<li><strong>Don’t commit solutions to the repository.</strong> Add the solutions folder to <code>.gitignore</code>, so that it’s never committed by accident.</li>
+<li><strong>Store solutions in Dropbox instead.</strong> Keep them in the session’s folder in the shared HSMA Dropbox, and share them with students after the session.</li>
+</ul>
+<p>For example, to ignore a <code>solutions</code> folder, add this line to <code>.gitignore</code>:</p>
+<pre><code>solutions/</code></pre>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Anything that has already been committed stays in the repository’s history, even after you delete it or add it to <code>.gitignore</code>, and can be found by anyone once the repository is public.</p>
+<p>If you have already committed solutions, remove them from the history before making the repository public, rather than just deleting the files. It’s easiest to do this before you’ve made lots of other changes, so if in doubt, ask for help.</p>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -617,8 +718,8 @@ background-size: cover;
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./hsma_tech_stack.html" class="pagination-link" aria-label="Technical">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Technical</span></span>
+      <a href="./hsma_tech_stack.html" class="pagination-link" aria-label="The HSMA Tech Stack">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The HSMA Tech Stack</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

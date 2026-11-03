@@ -1,7 +1,17 @@
 
+## General Points
 
-## Neurodiversity
+### Cognitive Load Theory
 
 
 
-## Sight Impairments
+## Particular Considerations
+
+
+### Neurodiversity
+
+
+
+### Sight Impairments
+
+We do not enforce the use of alt text for

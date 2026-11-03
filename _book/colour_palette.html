@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Colour Palette – hsma_content_writing_manual</title>
+<title>5&nbsp; Colours and Fonts – hsma_content_writing_manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -97,7 +132,7 @@ background-size: cover;
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./colour_palette.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colour Palette</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./colour_palette.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colours and Fonts</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,7 +145,7 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colour Palette</span></h1>
+      <h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colours and Fonts</span></h1>
                       </div>
   </div>
     
@@ -169,25 +204,25 @@ background-size: cover;
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./slidecrafting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tooling</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Designing HSMA Slides</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./colour_palette.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colour Palette</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Colours and Fonts</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./accessibility_considerations.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neurodiversity</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">General Points</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./hsma_tech_stack.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Technical</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The HSMA Tech Stack</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -201,8 +236,25 @@ background-size: cover;
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#core-colours" id="toc-core-colours" class="nav-link active" data-scroll-target="#core-colours"><span class="header-section-number">5.1</span> Core colours</a></li>
+  <li><a href="#title-slide" id="toc-title-slide" class="nav-link" data-scroll-target="#title-slide"><span class="header-section-number">5.2</span> Title slide</a></li>
+  <li><a href="#value-box-colours" id="toc-value-box-colours" class="nav-link" data-scroll-target="#value-box-colours"><span class="header-section-number">5.3</span> Value box colours</a></li>
+  <li><a href="#code-windows" id="toc-code-windows" class="nav-link" data-scroll-target="#code-windows"><span class="header-section-number">5.4</span> Code windows</a></li>
+  <li><a href="#choosing-your-own-colours" id="toc-choosing-your-own-colours" class="nav-link" data-scroll-target="#choosing-your-own-colours"><span class="header-section-number">5.5</span> Choosing your own colours</a></li>
+  <li><a href="#fonts" id="toc-fonts" class="nav-link" data-scroll-target="#fonts"><span class="header-section-number">5.6</span> Fonts</a>
+  <ul class="collapse">
+  <li><a href="#lexend" id="toc-lexend" class="nav-link" data-scroll-target="#lexend"><span class="header-section-number">5.6.1</span> Lexend</a></li>
+  <li><a href="#text-sizes" id="toc-text-sizes" class="nav-link" data-scroll-target="#text-sizes"><span class="header-section-number">5.6.2</span> Text sizes</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">5.6.3</span> Code</a></li>
+  <li><a href="#icons" id="toc-icons" class="nav-link" data-scroll-target="#icons"><span class="header-section-number">5.6.4</span> Icons</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -211,8 +263,371 @@ background-size: cover;
 
 
 
+<p>The <a href="https://github.com/hsma-programme/hsma_quarto_slide_template">HSMA Quarto slide template</a> sets up the colours and fonts for you, so if you’re working in Quarto you shouldn’t normally need to change anything.</p>
+<p>This section is for when you need to pick colours or fonts yourself - for example in Google Slides, in a diagram, or in a value box - so that your materials stay consistent with the rest of HSMA.</p>
+<section id="core-colours" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="core-colours"><span class="header-section-number">5.1</span> Core colours</h2>
+<p>HSMA slides use light text on a dark background, with HSMA red as the accent colour.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Colour</th>
+<th>Hex</th>
+<th>Where it’s used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="swatch" style="background:#8f0000"></span></td>
+<td>HSMA red</td>
+<td><code>#8f0000</code></td>
+<td>Brand colour; the progress bar along the bottom of the slides</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#303030"></span></td>
+<td>Background grey</td>
+<td><code>#303030</code></td>
+<td>Slide background behind the banner image</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:rgba(56,56,56,0.8)"></span></td>
+<td>Content box grey</td>
+<td><code>rgba(56, 56, 56, 0.8)</code></td>
+<td>The semi-transparent box behind slide content, which lets the banner show through</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#ffffff"></span></td>
+<td>White</td>
+<td><code>#ffffff</code></td>
+<td>All body text and headings</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#42affa"></span></td>
+<td>Link blue</td>
+<td><code>#42affa</code></td>
+<td>Links</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#FAEE42"></span></td>
+<td>Highlight yellow</td>
+<td><code>#FAEE42</code></td>
+<td>Alternate Link Colour, or highlighted text</td>
+</tr>
+</tbody>
+</table>
+<p>The slide backgrounds are the HSMA banner artwork (<code>assets/banner.png</code> on the title slide, <code>assets/banner_hq.png</code> on content slides) rather than a flat colour.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>HSMA red is a good accent colour but a poor text colour on the dark background - its contrast ratio against <code>#303030</code> is only 1.4:1. Use it for fills and borders, with white text on top (9.7:1), rather than as coloured text.</p>
+</div>
+</div>
+</section>
+<section id="title-slide" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="title-slide"><span class="header-section-number">5.2</span> Title slide</h2>
+<p>The title slide puts a dark, semi-transparent panel over the banner, with two accent colours for the author and the tagline.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Colour</th>
+<th>Hex</th>
+<th>Where it’s used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="swatch" style="background:#7ac943"></span></td>
+<td>Author green</td>
+<td><code>#7ac943</code></td>
+<td>Author name</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#ffe600"></span></td>
+<td>Tagline yellow</td>
+<td><code>#ffe600</code></td>
+<td>Tagline under the title</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:rgba(0,0,0,0.45)"></span></td>
+<td>Panel black</td>
+<td><code>rgba(0, 0, 0, 0.45)</code></td>
+<td>Panel behind the title text</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="value-box-colours" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="value-box-colours"><span class="header-section-number">5.3</span> Value box colours</h2>
+<p>Value boxes come from the <code>bergam0t/value-box</code> extension, and you choose a colour with the <code>color</code> attribute (e.g.&nbsp;<code>color="bg-teal"</code>). Text in a value box is always white.</p>
+<p>All of the extension’s own colours give white text a contrast ratio of at least 4.5:1, which meets the WCAG AA standard for normal-sized text.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Class</th>
+<th>Hex</th>
+<th>Contrast with white</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="swatch" style="background:#3d6a9e"></span></td>
+<td><code>bg-blue</code> (the default)</td>
+<td><code>#3d6a9e</code></td>
+<td>5.6:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#2d4a6b"></span></td>
+<td><code>bg-navy</code></td>
+<td><code>#2d4a6b</code></td>
+<td>9.1:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#2e7873"></span></td>
+<td><code>bg-teal</code></td>
+<td><code>#2e7873</code></td>
+<td>5.2:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#3d7a52"></span></td>
+<td><code>bg-green</code></td>
+<td><code>#3d7a52</code></td>
+<td>5.1:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#5c6e3f"></span></td>
+<td><code>bg-olive</code></td>
+<td><code>#5c6e3f</code></td>
+<td>5.6:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#8f4e2e"></span></td>
+<td><code>bg-orange</code></td>
+<td><code>#8f4e2e</code></td>
+<td>6.4:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#8a3535"></span></td>
+<td><code>bg-red</code></td>
+<td><code>#8a3535</code></td>
+<td>8.0:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#7d3d5e"></span></td>
+<td><code>bg-pink</code></td>
+<td><code>#7d3d5e</code></td>
+<td>7.8:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#533d7a"></span></td>
+<td><code>bg-purple</code></td>
+<td><code>#533d7a</code></td>
+<td>9.1:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#3d4f63"></span></td>
+<td><code>bg-slate</code></td>
+<td><code>#3d4f63</code></td>
+<td>8.4:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#4a4f57"></span></td>
+<td><code>bg-grey</code></td>
+<td><code>#4a4f57</code></td>
+<td>8.2:1</td>
+</tr>
+</tbody>
+</table>
+<p>The slide template also defines three lighter colours of its own, which take priority over the extension’s. White text doesn’t work on these - its contrast ratio is well below the 4.5:1 minimum - but black text does:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Class</th>
+<th>Hex</th>
+<th>Contrast with white</th>
+<th>Contrast with black</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="swatch" style="background:#d37b00"></span></td>
+<td><code>bg-amber</code></td>
+<td><code>#d37b00</code></td>
+<td>3.2:1</td>
+<td>6.6:1</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#6abdc0"></span></td>
+<td><code>bg-light-blue</code></td>
+<td><code>#6abdc0</code></td>
+<td>2.2:1</td>
+<td>9.7:1</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#c5c5c5"></span></td>
+<td><code>bg-light-grey</code></td>
+<td><code>#c5c5c5</code></td>
+<td>1.7:1</td>
+<td>12.2:1</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Don’t use <code>bg-amber</code>, <code>bg-light-blue</code> or <code>bg-light-grey</code> with the default white text. Always switch the text to black, as described below.</p>
+</div>
+</div>
+<p>To do this, add <code>font-color="black"</code> to the value box. If the box has an icon, add <code>icon-color="black"</code> as well, as icons are white by default.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>::: {.value-box color="bg-light-blue" font-color="black" icon="bi-lightbulb" icon-color="black"}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Black text on a light blue box (9.7:1 contrast).</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you’d rather keep white text, pick one of the extension’s colours in the first table instead (for example <code>bg-orange</code> in place of <code>bg-amber</code>).</p>
+</section>
+<section id="code-windows" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="code-windows"><span class="header-section-number">5.4</span> Code windows</h2>
+<p>Code shown in a code window uses a dark slate colour scheme, separate from the rest of the slide.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Colour</th>
+<th>Hex</th>
+<th>Where it’s used</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="swatch" style="background:#1e293b"></span></td>
+<td>Code background</td>
+<td><code>#1e293b</code></td>
+<td>Behind the code</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#0f172a"></span></td>
+<td>Title bar</td>
+<td><code>#0f172a</code></td>
+<td>Window title bar</td>
+</tr>
+<tr class="odd">
+<td><span class="swatch" style="background:#334155"></span></td>
+<td>File tab</td>
+<td><code>#334155</code></td>
+<td>File name tab</td>
+</tr>
+<tr class="even">
+<td><span class="swatch" style="background:#e2e8f0"></span></td>
+<td>Code text</td>
+<td><code>#e2e8f0</code></td>
+<td>Code text</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="choosing-your-own-colours" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="choosing-your-own-colours"><span class="header-section-number">5.5</span> Choosing your own colours</h2>
+<p>If you’re adding colour that the template doesn’t cover - in a diagram, a chart or a Google Slides deck - a few rules of thumb keep things readable:</p>
+<ul>
+<li><strong>Check contrast.</strong> Text needs a contrast ratio of at least 4.5:1 with its background (3:1 for large or bold text, and for lines and shapes in charts). The <a href="https://webaim.org/resources/contrastchecker/">WebAIM contrast checker</a> is a quick way to test a pair of colours.</li>
+<li><strong>Don’t rely on colour alone.</strong> Pair colour with a label, an icon or a pattern, so the point still comes across for people with colour vision deficiency.</li>
+<li><strong>Reuse the colours above</strong> where you can, rather than introducing new ones.</li>
+</ul>
+<p>Read more in <a href="./accessibility_considerations.html">Accessibility Considerations</a>.</p>
+</section>
+<section id="fonts" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="fonts"><span class="header-section-number">5.6</span> Fonts</h2>
+<section id="lexend" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="lexend"><span class="header-section-number">5.6.1</span> Lexend</h3>
+<p>All HSMA slides use <a href="https://www.lexend.com/">Lexend</a>, for both body text and headings. It’s also the font used on the HSMA website and in this manual.</p>
+<p>Lexend was designed to be easy to read, with wide letter spacing and clear, distinct letter shapes, which suits a mixed audience reading slides on a shared screen.</p>
+<p>In the Quarto template, Lexend is set in <code>_brand.yml</code> and loaded from Google Fonts, so you don’t need to install it. In Google Slides, you can add it through <strong>Font → More fonts</strong> and searching for “Lexend”.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The HSMA website also uses Bebas Neue for some page headings. The slide template doesn’t, so stick to Lexend on slides.</p>
+</div>
+</div>
+</section>
+<section id="text-sizes" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="text-sizes"><span class="header-section-number">5.6.2</span> Text sizes</h3>
+<p>The template sets the base text size to 22px, with paragraphs at 0.85em and second-level headings at 1.3em.</p>
+<p>If your content doesn’t fit on a slide, you may either want to split it across two slides, or up to a certain point, consider using a div that sets a smaller font like so:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>::: {style='font-size: 75%;'}</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Your text goes here</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="code" class="level3" data-number="5.6.3">
+<h3 data-number="5.6.3" class="anchored" data-anchor-id="code"><span class="header-section-number">5.6.3</span> Code</h3>
+<p>Code blocks use the default monospace font from Quarto’s Reveal.js theme. Code windows are set slightly smaller, at around 20px, so that longer lines fit.</p>
+</section>
+<section id="icons" class="level3" data-number="5.6.4">
+<h3 data-number="5.6.4" class="anchored" data-anchor-id="icons"><span class="header-section-number">5.6.4</span> Icons</h3>
+<p>The template loads two icon sets, which you can use in value boxes through the <code>icon</code> attribute:</p>
+<ul>
+<li><a href="https://fontawesome.com/icons">Font Awesome</a> 6.4.0 - e.g.&nbsp;<code>icon="fa-solid fa-lightbulb"</code></li>
+<li><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a> 1.11.3 - e.g.&nbsp;<code>icon="bi-arrow-down-up"</code></li>
+</ul>
+<p>As with colour, don’t let an icon carry meaning on its own - pair it with text that says the same thing.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -617,13 +1032,13 @@ background-size: cover;
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./slidecrafting.html" class="pagination-link" aria-label="Tooling">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tooling</span></span>
+      <a href="./slidecrafting.html" class="pagination-link" aria-label="Designing HSMA Slides">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Designing HSMA Slides</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./accessibility_considerations.html" class="pagination-link" aria-label="Neurodiversity">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Neurodiversity</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./accessibility_considerations.html" class="pagination-link" aria-label="General Points">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">General Points</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
