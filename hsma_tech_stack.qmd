@@ -6,33 +6,55 @@
 
 We now encourage students to use miniforge for environment management (compared to Anaconda in previous years).
 
+::: {.callout-note}
+The first session in each module will generally have an `environment.yml`. If you are not the author of the first session but are contributing a later module, ask the author of the first session if you can add your additional requirements to that environment.yml.
+:::
+
+See HSMA 7 sessions 1C for more details on this.
+
 ## IDE - Positron
 
-Students will be taught to work in [Positron]().
+Students will be taught to work in [Positron](https://positron.posit.co/).
 
-We
-
+See HSMA 7 sessions 1C for more details on this.
 
 ## Early Python Sessions - Python Compiler
 
-
+Early programming sessions use https://pythoncompiler.io/
 
 
 ## Repository Storage - GitHub
 
+Repositories are stored in the [hsma-programme GitHub](https://github.com/hsma-programme).
+
+::: {.callout-caution}
+
+At present, we're still trying to work out the best way to organise the student-facing repositories for HSMA 7.
+
+HSMA 6 used a pattern of one repository per session, but this may change to one per module, or another approach.
+
+For now, choose however you would like to work for the sessions you are working on.
+
+:::
+
+
+::: {.callout-note}
+
+Upload your repository as private for now. This should still give other programme staff access to it.
+
+:::
 
 
 ## eBooks - Quarto
 
-
+Quarto is used for ebook development. We also teach the students about Quarto.
 
 ## Web Application Development - Streamlit
 
-
+Streamlit is used for developing internal web apps for teaching and admin. We also teach the students about Quarto.
 
 
 ## Administrative
-
 
 ### Session Delivery - Zoom
 
@@ -40,12 +62,25 @@ HSMA sessions are delivered on Zoom.
 
 ### Student Communication - Slack
 
+_Coming soon_
 
+### Trello
+
+_Coming soon_
+
+### Dropbox
+
+_Coming soon_
 
 ### Material Sharing - HSMA Website
 
 All material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.
 
+
+::: {.callout-note}
+
 You do not have to manage the uploads of the files yourself - this will all be handled by Sammi, Dan or Jemma closer to the launch of HSMA 7.
 
 However, you can see what the format of the sharing is likely to look at on <www.hsma.co.uk/modules>.
+
+:::
