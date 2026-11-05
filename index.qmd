@@ -1,5 +1,5 @@
-# Preface {.unnumbered}
+# Introduction
 
-This is a Quarto book.
+This is a guide to writing content for HSMA sessions.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+It contains tips, tricks, useful things to know about students, lessons learned from what's gone well and not so well, and more.

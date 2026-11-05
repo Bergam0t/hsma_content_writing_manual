@@ -14,7 +14,6 @@ book:
     - index.qmd
     - how_an_hsma_day_runs.qmd
     - pacing_and_prior_knowledge.qmd
-    - exercise_types.qmd
     - slidecrafting.qmd
     - colour_palette.qmd
     - accessibility_considerations.qmd

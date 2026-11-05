@@ -4,9 +4,13 @@
 
 Each HSMA session lives in its own GitHub repository on the [hsma-programme](https://github.com/hsma-programme) account.
 
-Create the repository as **private** while you are still working on it. Students shouldn't stumble across half-finished slides, exercises or code, and it gives you room to restructure things freely.
+Create the repository as **private** while you are still working on it. This prevents students stumbling across half-finished slides, exercises or code, and it gives you room to restructure things freely.
 
 Once the session materials are ready, change the repository to **public**, so that students can access it. You can do this under **Settings → General → Danger Zone → Change repository visibility**.
+
+### Prep and student-facing repos
+
+In some cases, you may find it more helpful to
 
 ## Publishing slides with GitHub Pages
 
@@ -57,6 +61,5 @@ solutions/
 
 ::: {.callout-warning}
 Anything that has already been committed stays in the repository's history, even after you delete it or add it to `.gitignore`, and can be found by anyone once the repository is public.
-
-If you have already committed solutions, remove them from the history before making the repository public, rather than just deleting the files. It's easiest to do this before you've made lots of other changes, so if in doubt, ask for help.
+However, in general I wouldn't be too worried about this as students are not marked on exercises; there is no external motivation to 'cheat'. However, you may want to consider rewriting the history of the git repo if this is something you are confident in doing so.
 :::

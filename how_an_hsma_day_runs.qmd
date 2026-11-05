@@ -1,6 +1,8 @@
 
 
-# How an HSMA Day Runs
+# Designing a HSMA Day
+
+## How an HSMA Day Runs
 
 
 HSMA days run from 09:30 - 16:30, with a 1 hour break for lunch between 12:30 and - 13:30.
@@ -8,19 +10,44 @@ HSMA days run from 09:30 - 16:30, with a 1 hour break for lunch between 12:30 an
 You therefore effectively have two main 3 hour blocks of teaching to fill with a mixture of lectures, group exercises, and discussions.
 
 
+::: {.callout-tip}
 
-## Reminder - Prior level of student knowledge
+We'd generally set an upper limit of 1 hour on any single lecture section.
 
-HSMA is aimed at people with a wide range of backgrounds, from those with no prior computer programming experience all the way up to experienced python programmers with significant prior knowledge in areas such as statistics but who have perhaps not dabbled in operational research or machine learning previously.
-
-Therefore, exercises need to provide something for all of those people! This can be challenging but is achievable, and later parts of this section expand on some ways you can support this.
-
-
-::: {.callout-note}
-
-Read more about the pacing and prior level of knowledge in [this section](pacing_and_prior_knowledge.qmd).
+30 - 45 minutes is a better target where possible.
 
 :::
+
+
+::: {.callout-tip}
+
+Don't forget to leave time for breaks! Across a 3 hour morning section, I like to give at least one 10 minute break, and a 5 minute 'comfort break' as well if the sessions allow. This is a minimum - give 20 minutes total if you have breathing room.
+
+:::
+
+### Schedules
+
+We always provide a schedule to students ahead of time.
+
+
+::: {.callout-note collapse="true"}
+#### Click here to view some sample itineraries
+
+This is an example of one of Dan's sessions.
+
+```{=html}
+<iframe width='780' height='500' src='https://docs.google.com/spreadsheets/d/1x4JcT5PvvqN5CL3o5KS0TkpVoN9lmmaXyjaJ_uU0Tu4/edit?usp=sharing' title='1B schedule'></iframe>
+```
+
+This is an example of one of Sammi's sessions.
+
+```{=html}
+<iframe width='780' height='500' src='https://docs.google.com/spreadsheets/d/13bB79qiSQ3uxhnUUKhaDOs7q2uw-RoSwXjuKGyqu_T8/edit?usp=sharing' title='2F schedule'></iframe>
+```
+
+:::
+
+
 
 
 
@@ -44,34 +71,86 @@ Together, these give four possible combinations:
 | **Collaborative working** | Mixed-experience group, working together on a single copy | Similar-experience group, working together on a single copy |
 
 
+
+::: {.callout-note}
+### Reminder - Prior level of student knowledge
+
+HSMA is aimed at people with a wide range of backgrounds, from those with no prior computer programming experience all the way up to experienced python programmers with significant prior knowledge in areas such as statistics but who have perhaps not dabbled in operational research or machine learning previously.
+
+Therefore, exercises need to provide something for all of those people! This can be challenging but is achievable, and later parts of this section expand on some ways you can support this.
+
+Read more about the pacing and prior level of knowledge in [this section](pacing_and_prior_knowledge.qmd).
+
+:::
+
+
+
+
 ## Types of Group Exercises
 
-It's generaally not worth putting students into their groups for less than about 30 minutes, due to the overhead associated with getting them into their breakout rooms.
+
+::: {.callout-tip}
+
+It's generally not worth putting students into their groups for less than about 30 minutes, due to the overhead associated with getting them into their breakout rooms.
+
+:::
+
+
 
 
 ### Code Exercises
 
-Many
+A large number of exercises in HSMA will involve getting students to work on some code.
 
+#### Working in Python Compiler
 
+Early sessions make use of https://pythoncompiler.io/
 
-#### Working in Code Compiler
+However, once students have been introduced to Positron and environment management with Mamba in session 1D, we would expect them to no longer be using python compiler for exercises.
+
+::: {.callout-note}
+
+See the [HSMA tech stack](hsma_tech_stack.qmd) page for more information about how students are expected to work on sessions.
+
+:::
 
 
 #### Working from a given .py file
+
+In some exercises, students will be provided with a .py file. This may
+
+Here are some examples:
+
+- Exercise 1 in HSMA 6 5C (sentiment analysis)
+    - [Slides: exercise 1, slide 30](https://docs.google.com/presentation/d/1k2gQkA6Qa0TKm47Hh6tM7heTpYh6w2wF27ImQC_BeXk/edit?usp=sharing)
+    - [Code](https://github.com/hsma-programme/h6_5c_sentiment_analysis/blob/main/5c_sentiment_analysis/sa_1.py)
 
 
 #### Working from a given notebook
 
 
-
 #### Starting from scratch
 
+Students may also be given instructions where they are expected to write a .py file, .qmd file, notebook, streamlit app, or other kind of artefact from scratch. Alternatively, in sessions relating to tools like Git, they may not be writing code as an artefact, but it's along the same lines.
 
+
+Here are some examples:
+
+- Writing a py file from scratch in HSMA 6 2C SimPy Part 2
+    - [Slides: exercise 1, slide 25](https://docs.google.com/presentation/d/1y7S7bjJtdLQCquzzZ2vjYzRx9-RwXE-SWgWf88fLc4o/edit?usp=sharing)
+- Writing a .qmd file using a given .py file in HSMA 6 8A Quarto
+    - [Slides: exercise 1, slide 57](https://docs.google.com/presentation/d/1XYMK5b4dNaHfVesHO2EvRn1j2lFgQULadbRUU5FCkDg/edit?usp=sharing)
 
 ### Design Exercises
 
+In some cases, there may be design-based exercises where students plan something like a DES model by hand, with no code written.
 
+Here are some examples:
+
+- Design a Discrete Event Simulation for a system of your choosing
+    - [Slides: exercise 1, slide 19](https://docs.google.com/presentation/d/1HO0wXTocHRZgeuLadkGvqf5yC8BEmQzTcgo8QHOd0yY/edit?usp=sharing)
+- Design a ML model by hand to classify Dan's desert island DVDs
+    - [Slides: exercise 2, slide 33](https://docs.google.com/presentation/d/1EcO71B5kEvaSkvKQeGnuO2g4Ss4RKhrphR3gE8vv-Gk/edit?usp=sharing)
 
 ### Discussion Exercises
 
@@ -79,6 +158,37 @@ Many
 
 ### Interactive Tool Exercises
 
+We have several interactive tools available on HSMA that can form part of teaching.
+
+
+::: {.callout-note}
+Check whether each is hosted on stlite (in which case it will have a .hsma or .github.io link) or on streamlit community cloud (in which case there will be streamlit.app in the URL).
+
+stlite apps can be used by an unlimited number of users simultaneously.
+
+Other apps need to be used cautiously as they are likely to exceed limits, so you may need to get students running them locally (and they don't learn streamit until sessions 2h and 2g).
+:::
+
+
+**DES**
+
+- [The full DES playground](https://github.com/hsma-programme/Teaching_DES_Concepts_Streamlit)
+- [The mini DES playground](https://github.com/hsma-programme/des_playground_mini)
+- [Interactive vidigi exercise and playground](https://github.com/hsma-programme/nhs_oa_vidigi_streamlit)
+
+**Geographic**
+
+- [The full geographic decision-making roleplay](https://github.com/hsma-programme/geographic_or_ds_playground)
+- [The mini geographic playground](https://github.com/hsma-programme/geographic_playground_mini)
+
+**Machine learning**
+
+- [The 'commissioner' ML readmission model sign-off roleplay](https://github.com/hsma-programme/lambda_ml_streamlit_exercise)
+- [The mini ML playground](https://github.com/Bergam0t/ml_playground_mini)
+- [The reinforcement learning game](https://github.com/Bergam0t/ReinforcementLearningGame)
+
+You might also consider using other online sites that support a particular point
+- e.g. https://thetruesize.com/ as part of a larger exercise on map projections
 
 
 ## Other Types of Exercises

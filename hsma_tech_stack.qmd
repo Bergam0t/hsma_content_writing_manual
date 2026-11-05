@@ -4,19 +4,21 @@
 
 ## Environment Management - MiniForge
 
+We now encourage students to use miniforge for environment management (compared to Anaconda in previous years).
 
 ## IDE - Positron
 
+Students will be taught to work in [Positron]().
+
+We
 
 
-
-## Early Python Sessions - CodeCompiler
+## Early Python Sessions - Python Compiler
 
 
 
 
 ## Repository Storage - GitHub
-
 
 
 
@@ -35,8 +37,6 @@
 ### Session Delivery - Zoom
 
 HSMA sessions are delivered on Zoom.
-
-
 
 ### Student Communication - Slack
 
