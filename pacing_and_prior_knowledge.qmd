@@ -38,7 +38,7 @@ However, in some cases, it may also be reasonable to keep a technical explanatio
 To see what people have learned prior to the session you are writing, take a look at it in the flow of the [draft HSMA 7 syllabus](https://docs.google.com/spreadsheets/d/1k14aCL4ON5AFZ9hlGZOcLwkemSYUcZlfyF-tDH3zUQw/edit?usp=sharing).
 
 
-For a more detailed breakdown of what has been taught in every session up to that point, take a look at the []
+For a more detailed breakdown of what has been taught in every session up to that point, take a look at the [HSMA 7 Modules - What's Covered](https://docs.google.com/document/d/1tciVsdtEZvKJd_uoWP-TU1gml8XdRzCvVU1drZMfLdk/edit?usp=sharing) document.
 
 
 Speak to Sammi or Dan if you have any issues with accessing the file at that link.
@@ -47,3 +47,5 @@ Speak to Sammi or Dan if you have any issues with accessing the file at that lin
 ## Pacing
 
 The general gist for HSMA pacing is 'go a lot slower than you think you need to'.
+
+_To be expanded_

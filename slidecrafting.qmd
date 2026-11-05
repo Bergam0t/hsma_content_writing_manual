@@ -74,14 +74,14 @@ Dan and I come at slides from two different angles - you may also have a preferr
 :::: {.columns}
 
 ::: {.column width='50%'}
-**Primarily a Teaching Aid**
+**Sammi: Primarily a Teaching Aid**
 
 - Keeping the information per slide to a minimum to reduce cognitive load
 - Not as easy to refer back to; work best when combined with an [eBook](https://hsma.co.uk/books)
 :::
 
 ::: {.column width='50%'}
-**Combined teaching aid and reference material**
+**Dan: Combined teaching aid and reference material**
 
 - May have significantly more text per slide
 - Slides should stand alone strongly as reference material

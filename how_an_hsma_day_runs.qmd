@@ -128,6 +128,15 @@ Here are some examples:
 
 #### Working from a given notebook
 
+You may wish to give students a notebook they can work from.
+
+There are lots of examples of this in HSMA 6 module 3:
+
+- Exercise 1 in HSMA 6 3C:
+    - [Slides: exercise 1, slide 28](https://docs.google.com/presentation/d/1Xj9jYaJ_FH7ko84DGJ2M1l4DWfJ-W5wmY906UkUEgRg/edit?usp=sharing)
+    - [Notebook](https://github.com/hsma-programme/h6_3c_interactive_plots_travel/blob/main/h6_3c_interactive_plots_travel/exercises/HSMA%203C%20Exercise%201%20-%20Interactive%20Plots.ipynb)
+
+
 
 #### Starting from scratch
 

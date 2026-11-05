@@ -2,101 +2,101 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "hsma_content_writing_manual",
+    "title": "HSMA Content Writing Manual",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "1 Introduction\nThis is a guide to writing content for HSMA sessions.\nIt contains tips, tricks, useful things to know about students, lessons learned from what’s gone well and not so well, and more.",
     "crumbs": [
-      "Preface"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "how_an_hsma_day_runs.html",
     "href": "how_an_hsma_day_runs.html",
-    "title": "1  How an HSMA Day Runs",
+    "title": "2  Designing a HSMA Day",
     "section": "",
-    "text": "1.1 Reminder - Prior level of student knowledge\nHSMA days run from 09:30 - 16:30, with a 1 hour break for lunch between 12:30 and - 13:30.\nYou therefore effectively have two main 3 hour blocks of teaching to fill with a mixture of lectures, group exercises, and discussions.\nHSMA is aimed at people with a wide range of backgrounds, from those with no prior computer programming experience all the way up to experienced python programmers with significant prior knowledge in areas such as statistics but who have perhaps not dabbled in operational research or machine learning previously.\nTherefore, exercises need to provide something for all of those people! This can be challenging but is achievable, and later parts of this section expand on some ways you can support this.",
+    "text": "2.1 How an HSMA Day Runs\nHSMA days run from 09:30 - 16:30, with a 1 hour break for lunch between 12:30 and - 13:30.\nYou therefore effectively have two main 3 hour blocks of teaching to fill with a mixture of lectures, group exercises, and discussions.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How an HSMA Day Runs</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Designing a HSMA Day</span>"
     ]
   },
   {
-    "objectID": "how_an_hsma_day_runs.html#reminder---prior-level-of-student-knowledge",
-    "href": "how_an_hsma_day_runs.html#reminder---prior-level-of-student-knowledge",
-    "title": "1  How an HSMA Day Runs",
+    "objectID": "how_an_hsma_day_runs.html#how-an-hsma-day-runs",
+    "href": "how_an_hsma_day_runs.html#how-an-hsma-day-runs",
+    "title": "2  Designing a HSMA Day",
     "section": "",
-    "text": "Note\n\n\n\nRead more about the pacing and prior level of knowledge in this section.",
+    "text": "Tip\n\n\n\nWe’d generally set an upper limit of 1 hour on any single lecture section.\n30 - 45 minutes is a better target where possible.\n\n\n\n\n\n\n\n\nTip\n\n\n\nDon’t forget to leave time for breaks! Across a 3 hour morning section, I like to give at least one 10 minute break, and a 5 minute ‘comfort break’ as well if the sessions allow. This is a minimum - give 20 minutes total if you have breathing room.\n\n\n\n2.1.1 Schedules\nWe always provide a schedule to students ahead of time.\n\n\n\n\n\n\nNoteClick here to view some sample itineraries\n\n\n\n\n\nThis is an example of one of Dan’s sessions.\n\nThis is an example of one of Sammi’s sessions.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How an HSMA Day Runs</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Designing a HSMA Day</span>"
     ]
   },
   {
     "objectID": "how_an_hsma_day_runs.html#group-work-in-hsma",
     "href": "how_an_hsma_day_runs.html#group-work-in-hsma",
-    "title": "1  How an HSMA Day Runs",
-    "section": "1.2 Group work in HSMA",
-    "text": "1.2 Group work in HSMA\nHSMAs are placed into ‘peer support groups’ (PSGs) when they start on the programme and, for the most part, will stay with the same PSG throughout.\nIn HSMA 7, we are giving students more control over how they prefer to work.\n\n\n\n\n\n\n\n\n\nOption A\nOption B\n\n\n\n\nGroup make-up\nA more varied level of prior knowledge\nA more similar level of prior knowledge\n\n\nWorking style\nPrimarily individually, each on their own copy of an exercise, but working as a group to make sure everyone is progressing and to answer questions\nPrimarily collaboratively, all working on a single copy of the exercise together\n\n\n\nTogether, these give four possible combinations:\n\n\n\n\n\n\n\n\n\nVaried prior knowledge\nSimilar prior knowledge\n\n\n\n\nIndividual working\nMixed-experience group, each working on their own copy\nSimilar-experience group, each working on their own copy\n\n\nCollaborative working\nMixed-experience group, working together on a single copy\nSimilar-experience group, working together on a single copy",
+    "title": "2  Designing a HSMA Day",
+    "section": "2.2 Group work in HSMA",
+    "text": "2.2 Group work in HSMA\nHSMAs are placed into ‘peer support groups’ (PSGs) when they start on the programme and, for the most part, will stay with the same PSG throughout.\nIn HSMA 7, we are giving students more control over how they prefer to work.\n\n\n\n\n\n\n\n\n\nOption A\nOption B\n\n\n\n\nGroup make-up\nA more varied level of prior knowledge\nA more similar level of prior knowledge\n\n\nWorking style\nPrimarily individually, each on their own copy of an exercise, but working as a group to make sure everyone is progressing and to answer questions\nPrimarily collaboratively, all working on a single copy of the exercise together\n\n\n\nTogether, these give four possible combinations:\n\n\n\n\n\n\n\n\n\nVaried prior knowledge\nSimilar prior knowledge\n\n\n\n\nIndividual working\nMixed-experience group, each working on their own copy\nSimilar-experience group, each working on their own copy\n\n\nCollaborative working\nMixed-experience group, working together on a single copy\nSimilar-experience group, working together on a single copy\n\n\n\n\n\n\n\n\n\nNoteReminder - Prior level of student knowledge\n\n\n\nHSMA is aimed at people with a wide range of backgrounds, from those with no prior computer programming experience all the way up to experienced python programmers with significant prior knowledge in areas such as statistics but who have perhaps not dabbled in operational research or machine learning previously.\nTherefore, exercises need to provide something for all of those people! This can be challenging but is achievable, and later parts of this section expand on some ways you can support this.\nRead more about the pacing and prior level of knowledge in this section.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How an HSMA Day Runs</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Designing a HSMA Day</span>"
     ]
   },
   {
     "objectID": "how_an_hsma_day_runs.html#types-of-group-exercises",
     "href": "how_an_hsma_day_runs.html#types-of-group-exercises",
-    "title": "1  How an HSMA Day Runs",
-    "section": "1.3 Types of Group Exercises",
-    "text": "1.3 Types of Group Exercises\nIt’s generaally not worth putting students into their groups for less than about 30 minutes, due to the overhead associated with getting them into their breakout rooms.\n\n1.3.1 Code Exercises\nMany\n\n1.3.1.1 Working in Code Compiler\n\n\n1.3.1.2 Working from a given .py file\n\n\n1.3.1.3 Working from a given notebook\n\n\n1.3.1.4 Starting from scratch\n\n\n\n1.3.2 Design Exercises\n\n\n1.3.3 Discussion Exercises\n\n\n1.3.4 Interactive Tool Exercises",
+    "title": "2  Designing a HSMA Day",
+    "section": "2.3 Types of Group Exercises",
+    "text": "2.3 Types of Group Exercises\n\n\n\n\n\n\nTip\n\n\n\nIt’s generally not worth putting students into their groups for less than about 30 minutes, due to the overhead associated with getting them into their breakout rooms.\n\n\n\n2.3.1 Code Exercises\nA large number of exercises in HSMA will involve getting students to work on some code.\n\n2.3.1.1 Working in Python Compiler\nEarly sessions make use of https://pythoncompiler.io/\nHowever, once students have been introduced to Positron and environment management with Mamba in session 1D, we would expect them to no longer be using python compiler for exercises.\n\n\n\n\n\n\nNote\n\n\n\nSee the HSMA tech stack page for more information about how students are expected to work on sessions.\n\n\n\n\n2.3.1.2 Working from a given .py file\nIn some exercises, students will be provided with a .py file. This may\nHere are some examples:\n\nExercise 1 in HSMA 6 5C (sentiment analysis)\n\nSlides: exercise 1, slide 30\nCode\n\n\n\n\n2.3.1.3 Working from a given notebook\nYou may wish to give students a notebook they can work from.\nThere are lots of examples of this in HSMA 6 module 3:\n\nExercise 1 in HSMA 6 3C:\n\nSlides: exercise 1, slide 28\nNotebook\n\n\n\n\n2.3.1.4 Starting from scratch\nStudents may also be given instructions where they are expected to write a .py file, .qmd file, notebook, streamlit app, or other kind of artefact from scratch. Alternatively, in sessions relating to tools like Git, they may not be writing code as an artefact, but it’s along the same lines.\nHere are some examples:\n\nWriting a py file from scratch in HSMA 6 2C SimPy Part 2\n\nSlides: exercise 1, slide 25\n\nWriting a .qmd file using a given .py file in HSMA 6 8A Quarto\n\nSlides: exercise 1, slide 57\n\n\n\n\n\n2.3.2 Design Exercises\nIn some cases, there may be design-based exercises where students plan something like a DES model by hand, with no code written.\nHere are some examples:\n\nDesign a Discrete Event Simulation for a system of your choosing\n\nSlides: exercise 1, slide 19\n\nDesign a ML model by hand to classify Dan’s desert island DVDs\n\nSlides: exercise 2, slide 33\n\n\n\n\n2.3.3 Discussion Exercises\n\n\n2.3.4 Interactive Tool Exercises\nWe have several interactive tools available on HSMA that can form part of teaching.\n\n\n\n\n\n\nNote\n\n\n\nCheck whether each is hosted on stlite (in which case it will have a .hsma or .github.io link) or on streamlit community cloud (in which case there will be streamlit.app in the URL).\nstlite apps can be used by an unlimited number of users simultaneously.\nOther apps need to be used cautiously as they are likely to exceed limits, so you may need to get students running them locally (and they don’t learn streamit until sessions 2h and 2g).\n\n\nDES\n\nThe full DES playground\nThe mini DES playground\nInteractive vidigi exercise and playground\n\nGeographic\n\nThe full geographic decision-making roleplay\nThe mini geographic playground\n\nMachine learning\n\nThe ‘commissioner’ ML readmission model sign-off roleplay\nThe mini ML playground\nThe reinforcement learning game\n\nYou might also consider using other online sites that support a particular point - e.g. https://thetruesize.com/ as part of a larger exercise on map projections",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How an HSMA Day Runs</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Designing a HSMA Day</span>"
     ]
   },
   {
     "objectID": "how_an_hsma_day_runs.html#other-types-of-exercises",
     "href": "how_an_hsma_day_runs.html#other-types-of-exercises",
-    "title": "1  How an HSMA Day Runs",
-    "section": "1.4 Other Types of Exercises",
-    "text": "1.4 Other Types of Exercises\n\n1.4.1 Short Interactive Solo Exercises\nTo keep participants engaged, it can be helpful to scatter small interactive exercises into longer lecture sections.\n\n1.4.1.1 Zoom Poll\nWe can’t easily use Zoom’s built-in polls due to Zoom limitations: only the host (Dan) can create them in advance and launch them, and transfer of host or co-host responsibilities within the Zoom app doesn’t help.\nTherefore, it’s recommended to use Menti instead.\nZoom poll documentation\n\n\n1.4.1.2 Menti\nMenti supports small interactive polls. Through the university of Exeter, we have access to a paid Menti account if you sign in with SSO.\nThere are two key types of Menti polls:\n\nsurvey (self-paced)\npresentation (presenter controls progression through questions)\n\n\nIn HSMA, we tend to use ‘survey’, though ‘presentation’ may be appropriate in certain circumstances (but is generally a bit more challenging for the trainer to juggle alongside presenting slides).\n\n\n1.4.1.2.1 Setting up Menti Polls\nWe have a built-in HSMA theme we can provide access to (but we’ll need your email address to do that).\n\nYou will need to provide editor access to any Menti polls to both Dan (d.chalk@exeter.ac.uk) and Sammi (s.j.rosser@exeter.ac.uk) using the ‘invite user to collaborate’ button.\nFor all questions, consider whether you want to hide participant responses until the trainer clicks, so that users aren’t influenced by other participant’s answers.\nYou can do this per question by choosing the edit button while the question is selected.\n\n\n\n1.4.1.2.2 Sharing Menti Polls with Participants\n\nNote that Menti join codes expire after only a few days (currently the maximum that can be set is 14 days), but QR codes and the menti URL for the poll do not expire, so can be set up well in advance.\n\nTherefore, it’s best to provide a slide with the QR code and the url (but not the access code). The trainer can then also paste the URL into the session on the day.\n\n\n\n1.4.1.2.3 Sharing Menti Poll Results\nQuarto\n\nIf you are using Quarto slides, you can integrate the results page directly into the slides, so you can see the responses without having to navigate elsewhere\n\nTo embed into your Quarto slides, get the ‘embed slides’ link from the participant sharing options (accessed by clicking ‘share’).\n\nThis will give you a block like the below that you can copy in to your Quarto slides.\n\nGoogle Slides\nIf using google slides, just copy the long mentimeter link into the slides. In the participant sharing options, make sure the Access Level is set to ‘Limited’.",
+    "title": "2  Designing a HSMA Day",
+    "section": "2.4 Other Types of Exercises",
+    "text": "2.4 Other Types of Exercises\n\n2.4.1 Short Interactive Solo Exercises\nTo keep participants engaged, it can be helpful to scatter small interactive exercises into longer lecture sections.\n\n2.4.1.1 Zoom Poll\nWe can’t easily use Zoom’s built-in polls due to Zoom limitations: only the host (Dan) can create them in advance and launch them, and transfer of host or co-host responsibilities within the Zoom app doesn’t help.\nTherefore, it’s recommended to use Menti instead.\nZoom poll documentation\n\n\n2.4.1.2 Menti\nMenti supports small interactive polls. Through the university of Exeter, we have access to a paid Menti account if you sign in with SSO.\nThere are two key types of Menti polls:\n\nsurvey (self-paced)\npresentation (presenter controls progression through questions)\n\n\nIn HSMA, we tend to use ‘survey’, though ‘presentation’ may be appropriate in certain circumstances (but is generally a bit more challenging for the trainer to juggle alongside presenting slides).\n\n\n2.4.1.2.1 Setting up Menti Polls\nWe have a built-in HSMA theme we can provide access to (but we’ll need your email address to do that).\n\nYou will need to provide editor access to any Menti polls to both Dan (d.chalk@exeter.ac.uk) and Sammi (s.j.rosser@exeter.ac.uk) using the ‘invite user to collaborate’ button.\nFor all questions, consider whether you want to hide participant responses until the trainer clicks, so that users aren’t influenced by other participant’s answers.\nYou can do this per question by choosing the edit button while the question is selected.\n\n\n\n2.4.1.2.2 Sharing Menti Polls with Participants\n\nNote that Menti join codes expire after only a few days (currently the maximum that can be set is 14 days), but QR codes and the menti URL for the poll do not expire, so can be set up well in advance.\n\nTherefore, it’s best to provide a slide with the QR code and the url (but not the access code). The trainer can then also paste the URL into the session on the day.\n\n\n\n2.4.1.2.3 Sharing Menti Poll Results\nQuarto\n\nIf you are using Quarto slides, you can integrate the results page directly into the slides, so you can see the responses without having to navigate elsewhere\n\nTo embed into your Quarto slides, get the ‘embed slides’ link from the participant sharing options (accessed by clicking ‘share’).\n\nThis will give you a block like the below that you can copy in to your Quarto slides.\n\nGoogle Slides\nIf using google slides, just copy the long mentimeter link into the slides. In the participant sharing options, make sure the Access Level is set to ‘Limited’.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>How an HSMA Day Runs</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Designing a HSMA Day</span>"
     ]
   },
   {
     "objectID": "pacing_and_prior_knowledge.html",
     "href": "pacing_and_prior_knowledge.html",
-    "title": "2  Prior Knowledge and Pacing",
+    "title": "3  Prior Knowledge and Pacing",
     "section": "",
-    "text": "2.1 Prior Knowledge - before joining\nHSMAs can come from a wide variety of backgrounds.\nA large number join with zero prior programming knowldge.\nHowever, you will also get\nHSMAs can be\nThere are no particular entry requirements for HSMA beyond a self declaration of a reasonable level of computer literacy. We do not expect students to have any particular mathematical, statistical, or other knowledge.\nTherefore, sessions have to be designed with this diversity in mind; you will often need to cover the foundations in significant detail.",
+    "text": "3.1 Prior Knowledge - before joining\nHSMAs can come from a wide variety of backgrounds.\nA large number join with zero prior programming knowldge.\nHowever, you will also get\nHSMAs can be\nThere are no particular entry requirements for HSMA beyond a self declaration of a reasonable level of computer literacy. We do not expect students to have any particular mathematical, statistical, or other knowledge.\nTherefore, sessions have to be designed with this diversity in mind; you will often need to cover the foundations in significant detail.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
     ]
   },
   {
     "objectID": "pacing_and_prior_knowledge.html#prior-knowledge---before-joining",
     "href": "pacing_and_prior_knowledge.html#prior-knowledge---before-joining",
-    "title": "2  Prior Knowledge and Pacing",
+    "title": "3  Prior Knowledge and Pacing",
     "section": "",
     "text": "people with extensive R knowledge but limited or no Python experience\npeople with a small amount of prior R or Python experience\npeople (usually analysts) who have used complex Excel and SQL, but have not used a language like R or Python before.\n\n\n\nanalysts working in the NHS or related organisations\nclinicians\nmanagers\nGPs\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn HSMA, we do not necessarily shy away from explaining more technical thing - but it’s important to consider creative approaches to doing so, like games, analogies, etc.\nHowever, in some cases, it may also be reasonable to keep a technical explanation extremely simplified or high level. The main goal is to make students into safe, effective users of various techniques; if deep understanding of the technical underpinnings of a method is not necessary to achieve that, then consider skipping it in favour of spending more time on potential pitfalls.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
     ]
   },
   {
     "objectID": "pacing_and_prior_knowledge.html#prior-knowledge---on-the-programme",
     "href": "pacing_and_prior_knowledge.html#prior-knowledge---on-the-programme",
-    "title": "2  Prior Knowledge and Pacing",
-    "section": "2.2 Prior knowledge - on the programme",
-    "text": "2.2 Prior knowledge - on the programme\nTo see what people have learned prior to the session you are writing, take a look at it in the flow of the draft HSMA 7 syllabus.\nFor a more detailed breakdown of what has been taught in every session up to that point, take a look at the []\nSpeak to Sammi or Dan if you have any issues with accessing the file at that link.",
+    "title": "3  Prior Knowledge and Pacing",
+    "section": "3.2 Prior knowledge - on the programme",
+    "text": "3.2 Prior knowledge - on the programme\nTo see what people have learned prior to the session you are writing, take a look at it in the flow of the draft HSMA 7 syllabus.\nFor a more detailed breakdown of what has been taught in every session up to that point, take a look at the HSMA 7 Modules - What’s Covered document.\nSpeak to Sammi or Dan if you have any issues with accessing the file at that link.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
     ]
   },
   {
     "objectID": "pacing_and_prior_knowledge.html#pacing",
     "href": "pacing_and_prior_knowledge.html#pacing",
-    "title": "2  Prior Knowledge and Pacing",
-    "section": "2.3 Pacing",
-    "text": "2.3 Pacing\nThe general gist for HSMA pacing is ‘go a lot slower than you think you need to’.",
+    "title": "3  Prior Knowledge and Pacing",
+    "section": "3.3 Pacing",
+    "text": "3.3 Pacing\nThe general gist for HSMA pacing is ‘go a lot slower than you think you need to’.\nTo be expanded",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Prior Knowledge and Pacing</span>"
     ]
   },
   {
@@ -124,7 +124,7 @@
     "href": "slidecrafting.html#theory-of-slides",
     "title": "4  Designing HSMA Slides",
     "section": "4.2 Theory of Slides",
-    "text": "4.2 Theory of Slides\nDan and I come at slides from two different angles - you may also have a preferred approach!\n\n\nPrimarily a Teaching Aid\n\nKeeping the information per slide to a minimum to reduce cognitive load\nNot as easy to refer back to; work best when combined with an eBook\n\n\nCombined teaching aid and reference material\n\nMay have significantly more text per slide\nSlides should stand alone strongly as reference material",
+    "text": "4.2 Theory of Slides\nDan and I come at slides from two different angles - you may also have a preferred approach!\n\n\nSammi: Primarily a Teaching Aid\n\nKeeping the information per slide to a minimum to reduce cognitive load\nNot as easy to refer back to; work best when combined with an eBook\n\n\nDan: Combined teaching aid and reference material\n\nMay have significantly more text per slide\nSlides should stand alone strongly as reference material",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Designing HSMA Slides</span>"
     ]
@@ -264,7 +264,7 @@
     "href": "hsma_tech_stack.html#environment-management---miniforge",
     "title": "7  The HSMA Tech Stack",
     "section": "7.2 Environment Management - MiniForge",
-    "text": "7.2 Environment Management - MiniForge",
+    "text": "7.2 Environment Management - MiniForge\nWe now encourage students to use miniforge for environment management (compared to Anaconda in previous years).\n\n\n\n\n\n\nNote\n\n\n\nThe first session in each module will generally have an environment.yml. If you are not the author of the first session but are contributing a later module, ask the author of the first session if you can add your additional requirements to that environment.yml.\n\n\nSee HSMA 7 sessions 1C for more details on this.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
@@ -274,17 +274,17 @@
     "href": "hsma_tech_stack.html#ide---positron",
     "title": "7  The HSMA Tech Stack",
     "section": "7.3 IDE - Positron",
-    "text": "7.3 IDE - Positron",
+    "text": "7.3 IDE - Positron\nStudents will be taught to work in Positron.\nSee HSMA 7 sessions 1C for more details on this.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
   },
   {
-    "objectID": "hsma_tech_stack.html#early-python-sessions---codecompiler",
-    "href": "hsma_tech_stack.html#early-python-sessions---codecompiler",
+    "objectID": "hsma_tech_stack.html#early-python-sessions---python-compiler",
+    "href": "hsma_tech_stack.html#early-python-sessions---python-compiler",
     "title": "7  The HSMA Tech Stack",
-    "section": "7.4 Early Python Sessions - CodeCompiler",
-    "text": "7.4 Early Python Sessions - CodeCompiler",
+    "section": "7.4 Early Python Sessions - Python Compiler",
+    "text": "7.4 Early Python Sessions - Python Compiler\nEarly programming sessions use https://pythoncompiler.io/",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
@@ -294,7 +294,7 @@
     "href": "hsma_tech_stack.html#repository-storage---github",
     "title": "7  The HSMA Tech Stack",
     "section": "7.5 Repository Storage - GitHub",
-    "text": "7.5 Repository Storage - GitHub",
+    "text": "7.5 Repository Storage - GitHub\nRepositories are stored in the hsma-programme GitHub.\n\n\n\n\n\n\nCaution\n\n\n\nAt present, we’re still trying to work out the best way to organise the student-facing repositories for HSMA 7.\nHSMA 6 used a pattern of one repository per session, but this may change to one per module, or another approach.\nFor now, choose however you would like to work for the sessions you are working on.\n\n\n\n\n\n\n\n\nNote\n\n\n\nUpload your repository as private for now. This should still give other programme staff access to it.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
@@ -304,7 +304,7 @@
     "href": "hsma_tech_stack.html#ebooks---quarto",
     "title": "7  The HSMA Tech Stack",
     "section": "7.6 eBooks - Quarto",
-    "text": "7.6 eBooks - Quarto",
+    "text": "7.6 eBooks - Quarto\nQuarto is used for ebook development. We also teach the students about Quarto.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
@@ -314,7 +314,7 @@
     "href": "hsma_tech_stack.html#web-application-development---streamlit",
     "title": "7  The HSMA Tech Stack",
     "section": "7.7 Web Application Development - Streamlit",
-    "text": "7.7 Web Application Development - Streamlit",
+    "text": "7.7 Web Application Development - Streamlit\nStreamlit is used for developing internal web apps for teaching and admin. We also teach the students about Quarto.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
     ]
@@ -324,39 +324,9 @@
     "href": "hsma_tech_stack.html#administrative",
     "title": "7  The HSMA Tech Stack",
     "section": "7.8 Administrative",
-    "text": "7.8 Administrative\n\n7.8.1 Session Delivery - Zoom\nHSMA sessions are delivered on Zoom.\n\n\n7.8.2 Student Communication - Slack\n\n\n7.8.3 Material Sharing - HSMA Website\nAll material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.\nYou do not have to manage the uploads of the files yourself - this will all be handled by Sammi, Dan or Jemma closer to the launch of HSMA 7.\nHowever, you can see what the format of the sharing is likely to look at on &lt;www.hsma.co.uk/modules&gt;.",
+    "text": "7.8 Administrative\n\n7.8.1 Session Delivery - Zoom\nHSMA sessions are delivered on Zoom.\n\n\n7.8.2 Student Communication - Slack\nComing soon\n\n\n7.8.3 Trello\nComing soon\n\n\n7.8.4 Dropbox\nComing soon\n\n\n7.8.5 Material Sharing - HSMA Website\nAll material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.\n\n\n\n\n\n\nNote\n\n\n\nYou do not have to manage the uploads of the files yourself - this will all be handled by Sammi, Dan or Jemma closer to the launch of HSMA 7.\nHowever, you can see what the format of the sharing is likely to look at on &lt;www.hsma.co.uk/modules&gt;.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>The HSMA Tech Stack</span>"
-    ]
-  },
-  {
-    "objectID": "anatomy_of_a_session_repo.html",
-    "href": "anatomy_of_a_session_repo.html",
-    "title": "8  Anatomy of a HSMA session repository",
-    "section": "",
-    "text": "8.1 Where to create the repository\nEach HSMA session lives in its own GitHub repository on the hsma-programme account.\nCreate the repository as private while you are still working on it. Students shouldn’t stumble across half-finished slides, exercises or code, and it gives you room to restructure things freely.\nOnce the session materials are ready, change the repository to public, so that students can access it. You can do this under Settings → General → Danger Zone → Change repository visibility.",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Anatomy of a HSMA session repository</span>"
-    ]
-  },
-  {
-    "objectID": "anatomy_of_a_session_repo.html#publishing-slides-with-github-pages",
-    "href": "anatomy_of_a_session_repo.html#publishing-slides-with-github-pages",
-    "title": "8  Anatomy of a HSMA session repository",
-    "section": "8.2 Publishing slides with GitHub Pages",
-    "text": "8.2 Publishing slides with GitHub Pages\nIf you’re making your slides with Quarto (see Designing HSMA Slides), they are published as a website using GitHub Pages, so students can open them in a browser.\nThe slide template is already set up for this. It renders the slides into a docs/ folder in the repository, which GitHub Pages then serves.\n1. Render the slides into docs/\nquarto render --output-dir docs\nAlways include --output-dir docs. The slides are then in docs/index.html.\n2. Commit and push docs/\nThe docs/ folder needs to be committed to the repository, so don’t add it to .gitignore.\n3. Switch on GitHub Pages\nIn your repository on GitHub, go to Settings → Pages. Under Build and deployment, set the source to Deploy from a branch, then choose the main branch and the /docs folder, and save.\nAfter a minute or two, the slides appear at https://hsma-programme.github.io/&lt;repository-name&gt;/. The link is also shown at the top of the Pages settings.\n4. Check it\nOpen the published link and click through the slides. If something is missing, it’s usually a folder that needs adding to the docs-keep list in _quarto.yml. The template’s README explains how.\n\n\n\n\n\n\nNote\n\n\n\nWhether GitHub Pages can be used from a private repository depends on the plan the account is on. If it isn’t available while the repository is private, wait until you make it public before switching Pages on.\n\n\nRemember to render and push again whenever you change the slides, as the published site only updates when docs/ does.",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Anatomy of a HSMA session repository</span>"
-    ]
-  },
-  {
-    "objectID": "anatomy_of_a_session_repo.html#solutions",
-    "href": "anatomy_of_a_session_repo.html#solutions",
-    "title": "8  Anatomy of a HSMA session repository",
-    "section": "8.3 Solutions",
-    "text": "8.3 Solutions\nStudents can see everything in a public repository, including its history. To avoid solutions being visible before the session has finished:\n\nDon’t commit solutions to the repository. Add the solutions folder to .gitignore, so that it’s never committed by accident.\nStore solutions in Dropbox instead. Keep them in the session’s folder in the shared HSMA Dropbox, and share them with students after the session.\n\nFor example, to ignore a solutions folder, add this line to .gitignore:\nsolutions/\n\n\n\n\n\n\nWarning\n\n\n\nAnything that has already been committed stays in the repository’s history, even after you delete it or add it to .gitignore, and can be found by anyone once the repository is public.\nIf you have already committed solutions, remove them from the history before making the repository public, rather than just deleting the files. It’s easiest to do this before you’ve made lots of other changes, so if in doubt, ask for help.",
-    "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Anatomy of a HSMA session repository</span>"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; The HSMA Tech Stack – hsma_content_writing_manual</title>
+<title>7&nbsp; The HSMA Tech Stack – HSMA Content Writing Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -36,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./anatomy_of_a_session_repo.html" rel="next">
 <link href="./accessibility_considerations.html" rel="prev">
 <link href="./resources/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -132,7 +131,7 @@ background-size: cover;
       <img src="./resources/hsma_logo_white_wide.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">hsma_content_writing_manual</a> 
+      <a href="./">HSMA Content Writing Manual</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -145,25 +144,19 @@ background-size: cover;
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./how_an_hsma_day_runs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">How an HSMA Day Runs</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Designing a HSMA Day</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./pacing_and_prior_knowledge.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Prior Knowledge and Pacing</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./exercise_types.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">exercise_types.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Prior Knowledge and Pacing</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -190,12 +183,6 @@ background-size: cover;
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The HSMA Tech Stack</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./anatomy_of_a_session_repo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Anatomy of a HSMA session repository</span></span></a>
-  </div>
-</li>
     </ul>
     </div>
 </nav>
@@ -209,7 +196,7 @@ background-size: cover;
   <li><a href="#technical" id="toc-technical" class="nav-link active" data-scroll-target="#technical"><span class="header-section-number">7.1</span> Technical</a></li>
   <li><a href="#environment-management---miniforge" id="toc-environment-management---miniforge" class="nav-link" data-scroll-target="#environment-management---miniforge"><span class="header-section-number">7.2</span> Environment Management - MiniForge</a></li>
   <li><a href="#ide---positron" id="toc-ide---positron" class="nav-link" data-scroll-target="#ide---positron"><span class="header-section-number">7.3</span> IDE - Positron</a></li>
-  <li><a href="#early-python-sessions---codecompiler" id="toc-early-python-sessions---codecompiler" class="nav-link" data-scroll-target="#early-python-sessions---codecompiler"><span class="header-section-number">7.4</span> Early Python Sessions - CodeCompiler</a></li>
+  <li><a href="#early-python-sessions---python-compiler" id="toc-early-python-sessions---python-compiler" class="nav-link" data-scroll-target="#early-python-sessions---python-compiler"><span class="header-section-number">7.4</span> Early Python Sessions - Python Compiler</a></li>
   <li><a href="#repository-storage---github" id="toc-repository-storage---github" class="nav-link" data-scroll-target="#repository-storage---github"><span class="header-section-number">7.5</span> Repository Storage - GitHub</a></li>
   <li><a href="#ebooks---quarto" id="toc-ebooks---quarto" class="nav-link" data-scroll-target="#ebooks---quarto"><span class="header-section-number">7.6</span> eBooks - Quarto</a></li>
   <li><a href="#web-application-development---streamlit" id="toc-web-application-development---streamlit" class="nav-link" data-scroll-target="#web-application-development---streamlit"><span class="header-section-number">7.7</span> Web Application Development - Streamlit</a></li>
@@ -217,7 +204,9 @@ background-size: cover;
   <ul class="collapse">
   <li><a href="#session-delivery---zoom" id="toc-session-delivery---zoom" class="nav-link" data-scroll-target="#session-delivery---zoom"><span class="header-section-number">7.8.1</span> Session Delivery - Zoom</a></li>
   <li><a href="#student-communication---slack" id="toc-student-communication---slack" class="nav-link" data-scroll-target="#student-communication---slack"><span class="header-section-number">7.8.2</span> Student Communication - Slack</a></li>
-  <li><a href="#material-sharing---hsma-website" id="toc-material-sharing---hsma-website" class="nav-link" data-scroll-target="#material-sharing---hsma-website"><span class="header-section-number">7.8.3</span> Material Sharing - HSMA Website</a></li>
+  <li><a href="#trello" id="toc-trello" class="nav-link" data-scroll-target="#trello"><span class="header-section-number">7.8.3</span> Trello</a></li>
+  <li><a href="#dropbox" id="toc-dropbox" class="nav-link" data-scroll-target="#dropbox"><span class="header-section-number">7.8.4</span> Dropbox</a></li>
+  <li><a href="#material-sharing---hsma-website" id="toc-material-sharing---hsma-website" class="nav-link" data-scroll-target="#material-sharing---hsma-website"><span class="header-section-number">7.8.5</span> Material Sharing - HSMA Website</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -234,21 +223,70 @@ background-size: cover;
 </section>
 <section id="environment-management---miniforge" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="environment-management---miniforge"><span class="header-section-number">7.2</span> Environment Management - MiniForge</h2>
+<p>We now encourage students to use miniforge for environment management (compared to Anaconda in previous years).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The first session in each module will generally have an <code>environment.yml</code>. If you are not the author of the first session but are contributing a later module, ask the author of the first session if you can add your additional requirements to that environment.yml.</p>
+</div>
+</div>
+<p>See HSMA 7 sessions 1C for more details on this.</p>
 </section>
 <section id="ide---positron" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="ide---positron"><span class="header-section-number">7.3</span> IDE - Positron</h2>
+<p>Students will be taught to work in <a href="https://positron.posit.co/">Positron</a>.</p>
+<p>See HSMA 7 sessions 1C for more details on this.</p>
 </section>
-<section id="early-python-sessions---codecompiler" class="level2" data-number="7.4">
-<h2 data-number="7.4" class="anchored" data-anchor-id="early-python-sessions---codecompiler"><span class="header-section-number">7.4</span> Early Python Sessions - CodeCompiler</h2>
+<section id="early-python-sessions---python-compiler" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="early-python-sessions---python-compiler"><span class="header-section-number">7.4</span> Early Python Sessions - Python Compiler</h2>
+<p>Early programming sessions use https://pythoncompiler.io/</p>
 </section>
 <section id="repository-storage---github" class="level2" data-number="7.5">
 <h2 data-number="7.5" class="anchored" data-anchor-id="repository-storage---github"><span class="header-section-number">7.5</span> Repository Storage - GitHub</h2>
+<p>Repositories are stored in the <a href="https://github.com/hsma-programme">hsma-programme GitHub</a>.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At present, we’re still trying to work out the best way to organise the student-facing repositories for HSMA 7.</p>
+<p>HSMA 6 used a pattern of one repository per session, but this may change to one per module, or another approach.</p>
+<p>For now, choose however you would like to work for the sessions you are working on.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Upload your repository as private for now. This should still give other programme staff access to it.</p>
+</div>
+</div>
 </section>
 <section id="ebooks---quarto" class="level2" data-number="7.6">
 <h2 data-number="7.6" class="anchored" data-anchor-id="ebooks---quarto"><span class="header-section-number">7.6</span> eBooks - Quarto</h2>
+<p>Quarto is used for ebook development. We also teach the students about Quarto.</p>
 </section>
 <section id="web-application-development---streamlit" class="level2" data-number="7.7">
 <h2 data-number="7.7" class="anchored" data-anchor-id="web-application-development---streamlit"><span class="header-section-number">7.7</span> Web Application Development - Streamlit</h2>
+<p>Streamlit is used for developing internal web apps for teaching and admin. We also teach the students about Quarto.</p>
 </section>
 <section id="administrative" class="level2" data-number="7.8">
 <h2 data-number="7.8" class="anchored" data-anchor-id="administrative"><span class="header-section-number">7.8</span> Administrative</h2>
@@ -258,12 +296,33 @@ background-size: cover;
 </section>
 <section id="student-communication---slack" class="level3" data-number="7.8.2">
 <h3 data-number="7.8.2" class="anchored" data-anchor-id="student-communication---slack"><span class="header-section-number">7.8.2</span> Student Communication - Slack</h3>
+<p><em>Coming soon</em></p>
 </section>
-<section id="material-sharing---hsma-website" class="level3" data-number="7.8.3">
-<h3 data-number="7.8.3" class="anchored" data-anchor-id="material-sharing---hsma-website"><span class="header-section-number">7.8.3</span> Material Sharing - HSMA Website</h3>
+<section id="trello" class="level3" data-number="7.8.3">
+<h3 data-number="7.8.3" class="anchored" data-anchor-id="trello"><span class="header-section-number">7.8.3</span> Trello</h3>
+<p><em>Coming soon</em></p>
+</section>
+<section id="dropbox" class="level3" data-number="7.8.4">
+<h3 data-number="7.8.4" class="anchored" data-anchor-id="dropbox"><span class="header-section-number">7.8.4</span> Dropbox</h3>
+<p><em>Coming soon</em></p>
+</section>
+<section id="material-sharing---hsma-website" class="level3" data-number="7.8.5">
+<h3 data-number="7.8.5" class="anchored" data-anchor-id="material-sharing---hsma-website"><span class="header-section-number">7.8.5</span> Material Sharing - HSMA Website</h3>
 <p>All material is shared via the HSMA website, so students will have access to all materials (with the exception of solution files) ahead of the session.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>You do not have to manage the uploads of the files yourself - this will all be handled by Sammi, Dan or Jemma closer to the launch of HSMA 7.</p>
 <p>However, you can see what the format of the sharing is likely to look at on &lt;www.hsma.co.uk/modules&gt;.</p>
+</div>
+</div>
 
 
 </section>
@@ -677,9 +736,6 @@ background-size: cover;
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./anatomy_of_a_session_repo.html" class="pagination-link" aria-label="Anatomy of a HSMA session repository">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Anatomy of a HSMA session repository</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
