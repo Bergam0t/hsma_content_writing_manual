@@ -23,17 +23,36 @@ This opens the book in your browser and reloads it when you save a chapter.
 quarto render
 ```
 
-This builds the full book as a website in `_book/`. Each chapter is a separate page, with the sidebar for moving between them.
+This builds the full book as a website in `docs/`. Each chapter is a separate page, with the sidebar for moving between them.
 
-When the render finishes, `scripts/zip_book.py` zips the whole of `_book/` into:
+When the render finishes, `scripts/zip_book.py` zips the whole of `docs/` into:
 
 ```
-_book/HSMA-Content-Writing-Manual.zip
+docs/HSMA-Content-Writing-Manual.zip
 ```
 
-Use the zip when someone needs the manual offline. They unzip it and open `index.html` inside the `HSMA-Content-Writing-Manual` folder. The navigation and links work, but the search box may not, because browsers usually block it when pages are opened from local files.
+Use the zip when someone needs the manual offline. They unzip it and open `index.html` inside the `HSMA-Content-Writing-Manual` folder. The navigation and links work, but the search box may not, because browsers usually block it when pages are opened from local files. Once the site is on GitHub Pages, the zip can also be downloaded from `<site address>/HSMA-Content-Writing-Manual.zip`.
 
 The zip is only made by a full `quarto render`, not by `quarto preview` or by rendering a single chapter.
+
+## Publishing to GitHub Pages
+
+The book renders into `docs/` so that GitHub Pages can serve it straight from the repository.
+
+To publish an update:
+
+1. Run `quarto render`.
+2. Commit everything, **including the `docs/` folder**, and push to `main`.
+
+GitHub Pages rebuilds the site within a minute or two of the push.
+
+One-off setup (only needed the first time, by someone with admin access to the repository):
+
+1. On GitHub, go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Set the branch to **`main`** and the folder to **`/docs`**, then click **Save**.
+
+Quarto also writes an empty `docs/.nojekyll` file. Leave it in place: without it, GitHub Pages skips the `site_libs/` folder and the site loses its styling and scripts.
 
 ## Building the single-file version
 
