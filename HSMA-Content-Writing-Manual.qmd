@@ -1,0 +1,48 @@
+---
+title: "HSMA Content Writing Manual"
+author: "Sammi Rosser"
+date: "02/11/2026"
+filters:
+  - bergam0t/value-box
+  - scripts/standalone_links.lua
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-depth: 2
+    toc-location: left
+---
+
+<!--
+Single-file version of the whole manual. Not part of the book itself.
+Build it with:  quarto render --profile standalone
+Keep the chapter list below in sync with book: chapters: in _quarto.yml.
+-->
+
+::: {#chapter-index}
+{{< include index.qmd >}}
+:::
+
+::: {#chapter-how_an_hsma_day_runs}
+{{< include how_an_hsma_day_runs.qmd >}}
+:::
+
+::: {#chapter-pacing_and_prior_knowledge}
+{{< include pacing_and_prior_knowledge.qmd >}}
+:::
+
+::: {#chapter-slidecrafting}
+{{< include slidecrafting.qmd >}}
+:::
+
+::: {#chapter-colour_palette}
+{{< include colour_palette.qmd >}}
+:::
+
+::: {#chapter-accessibility_considerations}
+{{< include accessibility_considerations.qmd >}}
+:::
+
+::: {#chapter-hsma_tech_stack}
+{{< include hsma_tech_stack.qmd >}}
+:::

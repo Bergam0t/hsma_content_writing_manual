@@ -1,7 +1,9 @@
 project:
   type: book
+  post-render:
+    - scripts/zip_book.py
   resources:
-    - resources/fonts/lexend/*.woff2
+    - /resources/fonts/lexend/*.woff2
 
 book:
   title: "HSMA Content Writing Manual"
@@ -30,5 +32,5 @@ format:
     css: styles.css
     mainfont: Lexend
     title-block-banner: resources/banner.png
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt

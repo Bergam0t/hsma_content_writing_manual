@@ -1,0 +1,14 @@
+# Profile for building the whole manual as ONE self-contained HTML file.
+#
+#   quarto render --profile standalone
+#
+# Output: _standalone/HSMA-Content-Writing-Manual.html
+# Theme, fonts, CSS and filters are inherited from _quarto.yml.
+
+project:
+  type: default
+  output-dir: _standalone
+  render:
+    - HSMA-Content-Writing-Manual.qmd
+  # Everything is embedded in the HTML, so don't copy the book's resources.
+  resources: []

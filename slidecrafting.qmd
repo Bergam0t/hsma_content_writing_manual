@@ -9,7 +9,7 @@ There are two primary options for making your slides:
 
 ### Google Slides
 
-Google Slides was used throughout
+Google Slides was used throughout HSMA 6.
 
 
 :::: {.columns}
@@ -36,26 +36,32 @@ Google Slides was used throughout
 ::::
 
 
+Template: [https://docs.google.com/presentation/d/1XbmXo6tz9TfjCmAj9qSRXVA7x15IojkBz3IfdLqZgbI/edit?usp=sharing](https://docs.google.com/presentation/d/1XbmXo6tz9TfjCmAj9qSRXVA7x15IojkBz3IfdLqZgbI/edit?usp=sharing) 
+
+Examples can be found throughout the HSMA 6 content: [hsma.co.uk/modules](https://hsma.co.uk/modules)
+
 
 
 ### Quarto
+
+Quarto is a publishing platform allowing you to create rich outputs by writing in markdown.
 
 :::: {.columns}
 
 ::: {.column width='50%'}
 **Pros**
 
-- Provides an automated table of contents
-- Easy to make a change across all code examples if you spot an issue or make a change to how you do things
-- Can include interactive elements (charts, embedded iframes from other sites such as Menti, streamlit apps)
+- Provides an automated table of contents (addressing student feedback that it can sometimes be difficult to find the right sections in a google slides output when working on exercises or referring back to it)
+- Easy to make a change across all code examples if you spot an issue or make a change to how you do things (avoiding copying and pasting or re-screenshotting)
+- Can include interactive elements (charts, embedded iframes from other sites such as Menti, streamlit apps, live code windows where things can be rerun)
 - Wide range of extensions gives you a lot of flexibility (e.g. focus-list allows you to create an incrementally-revealing list where previous points are dimmed as the next appears, reducing cognitive load)
 :::
 
 ::: {.column width='50%'}
 **Cons**
 
-- More time-consuming to create
-- Less layout flexibility
+- Generally significantly more time-consuming to create
+- Less layout flexibility (and frustrating to work on layouts in)
 - Occasional very obscure bugs that are time-consuming to resolve
 - Requires you to host the end product (though github pages makes this pretty easy)
     - In addition, due to choice of extensions in our template, we can't bundle it as a single HTML file, making distribution more challenging
@@ -76,7 +82,8 @@ Dan and I come at slides from two different angles - you may also have a preferr
 ::: {.column width='50%'}
 **Sammi: Primarily a Teaching Aid**
 
-- Keeping the information per slide to a minimum to reduce cognitive load
+- Keeping the information per slide to a minimum to reduce extraneous cognitive load
+    - In addition, lots of incremental reveals on slides and highlighting to keep student's focus on the current point
 - Not as easy to refer back to; work best when combined with an [eBook](https://hsma.co.uk/books)
 :::
 
@@ -84,7 +91,8 @@ Dan and I come at slides from two different angles - you may also have a preferr
 **Dan: Combined teaching aid and reference material**
 
 - May have significantly more text per slide
-- Slides should stand alone strongly as reference material
+    - so possibly an increase in extraneous cognitive load
+- Slides stand alone strongly as reference material
 :::
 
 ::::

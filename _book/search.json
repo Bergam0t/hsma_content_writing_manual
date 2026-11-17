@@ -114,7 +114,7 @@
     "href": "slidecrafting.html#tooling",
     "title": "4  Designing HSMA Slides",
     "section": "",
-    "text": "Google Slides\nQuarto\n\n\n4.1.1 Google Slides\nGoogle Slides was used throughout\n\n\nPros\n\nQuick and easy to create\nLots of flexibility in layout\nPrintable/PDF version tends to create well\n\n\nCons\n\nNavigation can be challenging for students due to lack of table of contents\nThe Google suite (Slides, Docs, Sheets) is blocked on some NHS networks\nAs code is generally pasted in as screenshots\n\nupdates can be more time-consuming\naccessibility is reduced as screen-readers cannot consume this\n\nCannot integrate Menti directly\n\n\n\n\n\n4.1.2 Quarto\n\n\nPros\n\nProvides an automated table of contents\nEasy to make a change across all code examples if you spot an issue or make a change to how you do things\nCan include interactive elements (charts, embedded iframes from other sites such as Menti, streamlit apps)\nWide range of extensions gives you a lot of flexibility (e.g. focus-list allows you to create an incrementally-revealing list where previous points are dimmed as the next appears, reducing cognitive load)\n\n\nCons\n\nMore time-consuming to create\nLess layout flexibility\nOccasional very obscure bugs that are time-consuming to resolve\nRequires you to host the end product (though github pages makes this pretty easy)\n\nIn addition, due to choice of extensions in our template, we can’t bundle it as a single HTML file, making distribution more challenging\n\nPDF output is often not as good as in Google Slides\nGitHub pages (where we tend to host) is blocked on some NHS networks",
+    "text": "Google Slides\nQuarto\n\n\n4.1.1 Google Slides\nGoogle Slides was used throughout HSMA 6.\n\n\nPros\n\nQuick and easy to create\nLots of flexibility in layout\nPrintable/PDF version tends to create well\n\n\nCons\n\nNavigation can be challenging for students due to lack of table of contents\nThe Google suite (Slides, Docs, Sheets) is blocked on some NHS networks\nAs code is generally pasted in as screenshots\n\nupdates can be more time-consuming\naccessibility is reduced as screen-readers cannot consume this\n\nCannot integrate Menti directly\n\n\n\nTemplate: https://docs.google.com/presentation/d/1XbmXo6tz9TfjCmAj9qSRXVA7x15IojkBz3IfdLqZgbI/edit?usp=sharing \nExamples can be found throughout the HSMA 6 content: hsma.co.uk/modules\n\n\n4.1.2 Quarto\nQuarto is a publishing platform allowing you to create rich outputs by writing in markdown.\n\n\nPros\n\nProvides an automated table of contents (addressing student feedback that it can sometimes be difficult to find the right sections in a google slides output when working on exercises or referring back to it)\nEasy to make a change across all code examples if you spot an issue or make a change to how you do things (avoiding copying and pasting or re-screenshotting)\nCan include interactive elements (charts, embedded iframes from other sites such as Menti, streamlit apps, live code windows where things can be rerun)\nWide range of extensions gives you a lot of flexibility (e.g. focus-list allows you to create an incrementally-revealing list where previous points are dimmed as the next appears, reducing cognitive load)\n\n\nCons\n\nGenerally significantly more time-consuming to create\nLess layout flexibility (and frustrating to work on layouts in)\nOccasional very obscure bugs that are time-consuming to resolve\nRequires you to host the end product (though github pages makes this pretty easy)\n\nIn addition, due to choice of extensions in our template, we can’t bundle it as a single HTML file, making distribution more challenging\n\nPDF output is often not as good as in Google Slides\nGitHub pages (where we tend to host) is blocked on some NHS networks",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Designing HSMA Slides</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "slidecrafting.html#theory-of-slides",
     "title": "4  Designing HSMA Slides",
     "section": "4.2 Theory of Slides",
-    "text": "4.2 Theory of Slides\nDan and I come at slides from two different angles - you may also have a preferred approach!\n\n\nSammi: Primarily a Teaching Aid\n\nKeeping the information per slide to a minimum to reduce cognitive load\nNot as easy to refer back to; work best when combined with an eBook\n\n\nDan: Combined teaching aid and reference material\n\nMay have significantly more text per slide\nSlides should stand alone strongly as reference material",
+    "text": "4.2 Theory of Slides\nDan and I come at slides from two different angles - you may also have a preferred approach!\n\n\nSammi: Primarily a Teaching Aid\n\nKeeping the information per slide to a minimum to reduce extraneous cognitive load\n\nIn addition, lots of incremental reveals on slides and highlighting to keep student’s focus on the current point\n\nNot as easy to refer back to; work best when combined with an eBook\n\n\nDan: Combined teaching aid and reference material\n\nMay have significantly more text per slide\n\nso possibly an increase in extraneous cognitive load\n\nSlides stand alone strongly as reference material",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Designing HSMA Slides</span>"
     ]
@@ -232,21 +232,41 @@
   {
     "objectID": "accessibility_considerations.html",
     "href": "accessibility_considerations.html",
-    "title": "6  General Points",
+    "title": "6  Accessibility Considerations",
     "section": "",
-    "text": "6.0.1 Cognitive Load Theory",
+    "text": "6.1 General Points\nComing soon",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>General Points</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Accessibility Considerations</span>"
+    ]
+  },
+  {
+    "objectID": "accessibility_considerations.html#general-points",
+    "href": "accessibility_considerations.html#general-points",
+    "title": "6  Accessibility Considerations",
+    "section": "",
+    "text": "6.1.1 Cognitive Load Theory\nComing soon",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Accessibility Considerations</span>"
     ]
   },
   {
     "objectID": "accessibility_considerations.html#particular-considerations",
     "href": "accessibility_considerations.html#particular-considerations",
-    "title": "6  General Points",
-    "section": "6.1 Particular Considerations",
-    "text": "6.1 Particular Considerations\n\n6.1.1 Neurodiversity\n\n\n6.1.2 Sight Impairments\nWe do not enforce the use of alt text for",
+    "title": "6  Accessibility Considerations",
+    "section": "6.2 Particular Considerations",
+    "text": "6.2 Particular Considerations\nComing soon\n\n6.2.1 Neurodiversity\nComing soon\n\n\n6.2.2 Sight Impairments\nComing soon\nWe do not enforce the use of alt text for slides, but strongly recommend it.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>General Points</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Accessibility Considerations</span>"
+    ]
+  },
+  {
+    "objectID": "accessibility_considerations.html#quarto-slides",
+    "href": "accessibility_considerations.html#quarto-slides",
+    "title": "6  Accessibility Considerations",
+    "section": "6.3 Quarto slides",
+    "text": "6.3 Quarto slides\n\n6.3.1 The a11y extension\nComing soon",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Accessibility Considerations</span>"
     ]
   },
   {

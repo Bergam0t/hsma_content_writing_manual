@@ -1,17 +1,33 @@
+# Accessibility Considerations
 
 ## General Points
 
+*Coming soon*
+
 ### Cognitive Load Theory
 
+*Coming soon*
 
 
 ## Particular Considerations
 
+*Coming soon*
+
 
 ### Neurodiversity
 
+*Coming soon*
 
 
 ### Sight Impairments
 
-We do not enforce the use of alt text for
+*Coming soon*
+
+We do not enforce the use of alt text for slides, but strongly recommend it.
+
+
+## Quarto slides
+
+### The a11y extension
+
+*Coming soon*
